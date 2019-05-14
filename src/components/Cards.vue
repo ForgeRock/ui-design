@@ -21,13 +21,13 @@
 </template>
 
 <script>
-    export default {
-        name: 'Cards',
-        data: function () {
-            return {};
-        },
-        components: {},
-        mounted () {},
-        methods: {}
-    };
+export default {
+    name: 'Cards',
+    data: function () {
+        return {};
+    },
+    components: {},
+    mounted () {},
+    methods: {}
+};
 </script>

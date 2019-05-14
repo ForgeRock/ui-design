@@ -1,13 +1,12 @@
 <template>
     <div id="app">
         <div id="wrapper" :class="[{'toggled': toggled}]">
-
             <div id="appSidebarWrapper" class="fr-sidebar position-fixed">
                 <ul class="sidebar-nav position-static scrollable">
                     <li class="sidebar-brand">
-                        <router-link class="d-flex" active-class=""  :to="{ name: 'Dashboard'}">
-                            <img src="static/images/horizontal-logo.svg" :alt="$t('common.form.logo')" style="width:131px;" class="align-self-center sidebar-brand-logo" />
-                            <img src="static/images/vertical-logo.svg" :alt="$t('common.form.logo')"  style="height:22px;" class="align-self-center sidebar-brand-mark" />
+                        <router-link class="d-flex" active-class=""  :to="{ name: 'Color'}">
+                            <img src="images/horizontal-logo.svg" alt="Logo" style="width:131px;" class="align-self-center sidebar-brand-logo" />
+                            <img src="images/vertical-logo.svg" alt="Logo"  style="height:22px;" class="align-self-center sidebar-brand-mark" />
                             <h5 class="sidebar-item-text ml-2 mb-0 align-self-center font-weight-normal">Design System</h5>
                         </router-link>
                     </li>
@@ -75,60 +74,60 @@
 </template>
 
 <script>
-    import _ from 'lodash';
+import _ from 'lodash';
 
-    export default {
-        name: 'App',
-        components: {},
-        data: function () {
-            return {
-                window: {
-                    width: 0,
-                    height: 0
-                },
-                toggled: true
-            };
+export default {
+    name: 'App',
+    components: {},
+    data: function () {
+        return {
+            window: {
+                width: 0,
+                height: 0
+            },
+            toggled: true
+        };
+    },
+    methods: {
+        onToggle () {
+            this.toggled = !this.toggled;
         },
-        methods: {
-            onToggle () {
-                this.toggled = !this.toggled;
-            },
-            accessIcon (icon) {
-                let iconClass = 'fa fa-fw mr-3 ';
+        accessIcon (icon) {
+            let iconClass = 'fa fa-fw mr-3 ';
 
-                if (icon.length) {
-                    iconClass = iconClass + icon;
-                } else {
-                    iconClass = iconClass + 'fa-cube';
-                }
+            if (icon.length) {
+                iconClass = iconClass + icon;
+            } else {
+                iconClass = iconClass + 'fa-cube';
+            }
 
-                return iconClass;
-            },
-            handleResize (event) {
-                console.log('window has been resized: ' + window.innerWidth, event);
-                this.window.width = window.innerWidth;
-                if (this.window.width < 768) {
-                    this.toggled = false;
-                } else {
-                    this.toggled = true;
-                }
-            },
-            beforeDestroy () {
-                // Unregister the event listener before destroying this Vue instance
-                window.removeEventListener('resize', this.handleResize);
+            return iconClass;
+        },
+        handleResize (event) {
+            console.log('window has been resized: ' + window.innerWidth, event);
+            this.window.width = window.innerWidth;
+            if (this.window.width < 768) {
+                this.toggled = false;
+            } else {
+                this.toggled = true;
             }
         },
-        mounted () {
-            // Register an event listener when the Vue component is ready
-            window.addEventListener('resize', this.handleResize);
-            this.handleResize();
-        },
-        filters: {
-            capitalize: function (value) {
-                return _.capitalize(value);
-            }
+        beforeDestroy () {
+            // Unregister the event listener before destroying this Vue instance
+            window.removeEventListener('resize', this.handleResize);
         }
-    };
+    },
+    mounted () {
+        // Register an event listener when the Vue component is ready
+        window.addEventListener('resize', this.handleResize);
+        this.handleResize();
+    },
+    filters: {
+        capitalize: function (value) {
+            return _.capitalize(value);
+        }
+    }
+};
 </script>
 
 <!--
@@ -328,6 +327,10 @@
                     }
                     .sidebar-item-text {
                         color: $gray-700;
+                    }
+
+                    .router-link-exact-active {
+                        background: $white;
                     }
                 }
                 > li > a {

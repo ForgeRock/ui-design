@@ -87,13 +87,13 @@
 </template>
 
 <script>
-    export default {
-        name: 'Typography',
-        data: function () {
-            return {};
-        },
-        components: {},
-        mounted () {},
-        methods: {}
-    };
+export default {
+    name: 'Typography',
+    data: function () {
+        return {};
+    },
+    components: {},
+    mounted () {},
+    methods: {}
+};
 </script>

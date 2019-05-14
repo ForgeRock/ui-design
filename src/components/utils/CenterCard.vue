@@ -21,23 +21,23 @@
                 <slot name="center-card-footer"></slot>
             </b-card>
         </div>
-        
+
     </b-container>
 </template>
 <script>
-    /**
+/**
      * @description Card container that will stay horizontally and vertically center on the screen (example can be found on the default login page)
      *
      **/
-    export default {
-        name: 'Center-Card',
-        props: {
-            'showLogo': {
-                type: Boolean,
-                default: false
-            }
+export default {
+    name: 'Center-Card',
+    props: {
+        'showLogo': {
+            type: Boolean,
+            default: false
         }
-    };
+    }
+};
 </script>
 
 <style lang="scss" scoped>
@@ -103,7 +103,7 @@
             margin: 0;
         }
 
-        .fr-stretch-card {            
+        .fr-stretch-card {
             @media(max-width:575px) {
                 height: 100%;
             }

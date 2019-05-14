@@ -147,13 +147,13 @@
 </template>
 
 <script>
-    export default {
-        name: 'Buttons',
-        data: function () {
-            return {};
-        },
-        components: {},
-        mounted () {},
-        methods: {}
-    };
+export default {
+    name: 'Buttons',
+    data: function () {
+        return {};
+    },
+    components: {},
+    mounted () {},
+    methods: {}
+};
 </script>

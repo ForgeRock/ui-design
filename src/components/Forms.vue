@@ -20,13 +20,13 @@
 </template>
 
 <script>
-    export default {
-        name: 'Forms',
-        data: function () {
-            return {};
-        },
-        components: {},
-        mounted () {},
-        methods: {}
-    };
+export default {
+    name: 'Forms',
+    data: function () {
+        return {};
+    },
+    components: {},
+    mounted () {},
+    methods: {}
+};
 </script>
