@@ -84,7 +84,7 @@ export default {
     methods: {}
 };
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
     .bg-white {
         background-color: $white;
     }
