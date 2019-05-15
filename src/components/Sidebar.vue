@@ -20,7 +20,7 @@
                                                         <b-dropdown id="dropdown-1" text="Dropdown Button" variant="account" class="d-block h-100 w-100" boundary="viewport" no-caret>
                                                             <template slot="button-content">
                                                                 <div class="media">
-                                                                  <img class="my-1 rounded-circle"  src="static/images/avatar-bjensen.jpg" width="34" height="34" alt="Barbara Jensen's Avatar">
+                                                                  <img class="my-1 rounded-circle" src="images/avatar-bjensen.jpg" width="34" height="34" alt="Barbara Jensen's Avatar">
                                                                   <div class="media-body sidebar-item-text pl-3">
                                                                     <h5 class="my-0">Rock Financial</h5>
                                                                     <small>Barbara Jensen</small>
@@ -36,7 +36,7 @@
                                                             <b-dropdown-divider></b-dropdown-divider>
                                                             <b-dropdown-item>
                                                                 <div class="media">
-                                                                    <img class="rounded-circle align-self-center" src="static/images/avatar-bjensen.jpg" width="34" height="34" alt="Barbara Jensen's Avatar">
+                                                                    <img class="rounded-circle align-self-center" src="images/avatar-bjensen.jpg" width="34" height="34" alt="Barbara Jensen's Avatar">
                                                                     <div class="media-body sidebar-item-text pl-3">
                                                                         <h5 class="my-0">Barbara Jensen</h5>
                                                                         <span class="text-muted">bjensen@example.com</span>
@@ -104,7 +104,7 @@
                                                         <b-dropdown id="dropdown-1" text="Dropdown Button" variant="account" class="d-block h-100 w-100" boundary="viewport" no-caret ref="dropdown2">
                                                             <template slot="button-content">
                                                                 <div class="media">
-                                                                  <img class="my-1 rounded-circle" src="static/images/avatar-bjensen.jpg" width="34" height="34" alt="Barbara Jensen's Avatar">
+                                                                  <img class="my-1 rounded-circle" src="images/avatar-bjensen.jpg" width="34" height="34" alt="Barbara Jensen's Avatar">
                                                                   <div class="media-body sidebar-item-text pl-3">
                                                                     <h5 class="my-0">Rock Financial</h5>
                                                                     <small>Barbara Jensen</small>
@@ -120,7 +120,7 @@
                                                             <b-dropdown-divider></b-dropdown-divider>
                                                             <b-dropdown-item>
                                                                 <div class="media">
-                                                                    <img class="rounded-circle align-self-center" src="static/images/avatar-bjensen.jpg" width="34" height="34" alt="Barbara Jensen's Avatar">
+                                                                    <img class="rounded-circle align-self-center" src="images/avatar-bjensen.jpg" width="34" height="34" alt="Barbara Jensen's Avatar">
                                                                     <div class="media-body sidebar-item-text pl-3">
                                                                         <h5 class="my-0">Barbara Jensen</h5>
                                                                         <span class="text-muted">bjensen@example.com</span>
@@ -198,7 +198,7 @@
                                                         <b-dropdown id="dropdown-3" text="Dropdown Button" variant="account" class="d-block h-100 w-100" boundary="viewport" no-caret>
                                                             <template slot="button-content">
                                                                 <div class="media">
-                                                                  <img class="my-1 rounded-circle"  src="static/images/avatar-bjensen.jpg" width="34" height="34" alt="Barbara Jensen's Avatar">
+                                                                  <img class="my-1 rounded-circle"  src="images/avatar-bjensen.jpg" width="34" height="34" alt="Barbara Jensen's Avatar">
                                                                   <div class="media-body sidebar-item-text pl-3">
                                                                     <h5 class="my-0">Rock Financial</h5>
                                                                     <small>Barbara Jensen</small>
@@ -214,7 +214,7 @@
                                                             <b-dropdown-divider></b-dropdown-divider>
                                                             <b-dropdown-item>
                                                                 <div class="media">
-                                                                    <img class="rounded-circle align-self-center" src="static/images/avatar-bjensen.jpg" width="34" height="34" alt="Barbara Jensen's Avatar">
+                                                                    <img class="rounded-circle align-self-center" src="images/avatar-bjensen.jpg" width="34" height="34" alt="Barbara Jensen's Avatar">
                                                                     <div class="media-body sidebar-item-text pl-3">
                                                                         <h5 class="my-0">Barbara Jensen</h5>
                                                                         <span class="text-muted">bjensen@example.com</span>
@@ -282,7 +282,7 @@
                                                         <b-dropdown id="dropdown-4" text="Dropdown Button" variant="account" class="d-block h-100 w-100" boundary="viewport" no-caret ref="dropdown4">
                                                             <template slot="button-content">
                                                                 <div class="media">
-                                                                  <img class="my-1 rounded-circle"  src="static/images/avatar-bjensen.jpg" width="34" height="34" alt="Barbara Jensen's Avatar">
+                                                                  <img class="my-1 rounded-circle"  src="images/avatar-bjensen.jpg" width="34" height="34" alt="Barbara Jensen's Avatar">
                                                                   <div class="media-body sidebar-item-text pl-3">
                                                                     <h5 class="my-0">Rock Financial</h5>
                                                                     <small>Barbara Jensen</small>
@@ -298,7 +298,7 @@
                                                             <b-dropdown-divider></b-dropdown-divider>
                                                             <b-dropdown-item>
                                                                 <div class="media">
-                                                                    <img class="rounded-circle align-self-center" src="static/images/avatar-bjensen.jpg" width="34" height="34" alt="Barbara Jensen's Avatar">
+                                                                    <img class="rounded-circle align-self-center" src="images/avatar-bjensen.jpg" width="34" height="34" alt="Barbara Jensen's Avatar">
                                                                     <div class="media-body sidebar-item-text pl-3">
                                                                         <h5 class="my-0">Barbara Jensen</h5>
                                                                         <span class="text-muted">bjensen@example.com</span>
@@ -369,47 +369,51 @@
 </template>
 
 <script>
-    export default {
-        name: 'Sidebar',
-        data: function () {
-            return {
-                window: {
-                    width: 0,
-                    height: 0
-                },
-                toggled: true
-            };
+export default {
+    name: 'Sidebar',
+    data: function () {
+        return {
+            window: {
+                width: 0,
+                height: 0
+            },
+            toggled: true,
+            publicPath: process.env.BASE_URL
+        };
+    },
+    components: {},
+    methods: {
+        onMouseLeaveSidebar2 () {
+            this.$refs.dropdown2.hide();
         },
-        components: {},
-        methods: {
-            onMouseLeaveSidebar2 () {
-                this.$refs.dropdown2.hide();
-            },
-            onMouseLeaveSidebar4 () {
-                this.$refs.dropdown4.hide();
-            },
-            onMouseLeaveSidebar5 () {
-                this.$refs.dropdown5.hide();
-            },
-            handleResize (event) {
-                console.log('Sidebar[] window has been resized: ' + window.innerWidth, event);
-                this.window.width = window.innerWidth;
-                if (this.window.width < 768) {
-                    this.toggled = false;
-                } else {
-                    this.toggled = true;
-                }
-            },
-            beforeDestroy () {
-                // Unregister the event listener before destroying this Vue instance
-                window.removeEventListener('resize', this.handleResize);
+        onMouseLeaveSidebar4 () {
+            this.$refs.dropdown4.hide();
+        },
+        onMouseLeaveSidebar5 () {
+            this.$refs.dropdown5.hide();
+        },
+        handleResize (event) {
+            console.log('Sidebar[] window has been resized: ' + window.innerWidth, event);
+            this.window.width = window.innerWidth;
+            if (this.window.width < 768) {
+                this.toggled = false;
+            } else {
+                this.toggled = true;
             }
         },
-        mounted () {
-            // Register an event listener when the Vue component is ready
-            window.addEventListener('resize', this.handleResize);
-            this.handleResize();
-        }
+        beforeDestroy () {
+            // Unregister the event listener before destroying this Vue instance
+            window.removeEventListener('resize', this.handleResize);
+        },
+        onToggle () {
 
-    };
+        }
+    },
+    mounted () {
+        // Register an event listener when the Vue component is ready
+        window.addEventListener('resize', this.handleResize);
+        this.handleResize();
+    }
+
+};
 </script>

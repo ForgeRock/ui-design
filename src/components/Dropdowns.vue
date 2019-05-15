@@ -27,13 +27,13 @@
 </template>
 
 <script>
-    export default {
-        name: 'Dropdowns',
-        data: function () {
-            return {};
-        },
-        components: {},
-        mounted () {},
-        methods: {}
-    };
+export default {
+    name: 'Dropdowns',
+    data: function () {
+        return {};
+    },
+    components: {},
+    mounted () {},
+    methods: {}
+};
 </script>
