@@ -1,0 +1,245 @@
+// Application wide variables can be overridden here
+// Forgerock based styles start with fr
+$white:    #fff;
+$gray-100: #F6F8FA;
+$gray-200: #E7EEF4;
+$gray-300: #D3D8E0;
+$gray-400: #C0C9D5;
+$gray-500: #77869E;
+$gray-600: #5E6D82;
+$gray-700: #455469;
+$gray-800: #324054;
+$gray-900: #23282E;
+$black:    #000;
+
+$blue:    #109CF1;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #e83e8c;
+$red:     #F7685B;
+$orange:  #fd7e14;
+$yellow:  #FFB946;
+$green:   #2ED47A;
+$teal:    #37dcd7;
+$cyan:    #17A2B8;
+
+$primary:       $blue;
+$secondary:     $gray-500;
+$success:       $green;
+$info:          $blue;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-800;
+
+//Base
+$theme-colors: (
+        "primary": $primary,
+        "secondary": $secondary,
+        "success": $success,
+        "info": $info,
+        "warning": $warning,
+        "danger": $danger,
+        "light": $light,
+        "dark": $dark
+);
+
+// Global Variables
+$enable-shadows:                    true;
+$enable-rounded:                    true;
+
+//General
+$body-bg:                           $gray-100;
+$body-color:                        $gray-600;
+$headings-color:                    $gray-900;
+$font-weight-bold:                  500;
+$small-font-size:                   0.875rem;
+$transition-collapse:               height .25s ease-in;
+$border-radius:                     4px;
+$border-color:                      rgba(0, 0, 0, 0.125);
+$box-shadow-sm:                     0 1px 2px rgba($black, .13);
+$box-shadow:                        0 1px 3px rgba($black, .13);
+$box-shadow-lg:                     0 2px 11px rgba($black, .13);
+$fr-typeface:                       "Roboto", sans-serif;
+$fr-background-image:               none;
+
+$h1-font-size:                $font-size-base * 2.5;
+$h2-font-size:                $font-size-base * 2;
+$h3-font-size:                $font-size-base * 1.5;
+$h4-font-size:                $font-size-base * 1.25;
+$h5-font-size:                $font-size-base;
+$h6-font-size:                $font-size-base * 0.875;
+
+$headings-margin-bottom:      ($spacer / 2) !default;
+$headings-font-family:        inherit !default;
+$headings-font-weight:        $font-weight-bold;
+$headings-line-height:        1.2 !default;
+$headings-color:              inherit !default;
+
+$display1-size:               5rem;
+$display2-size:               4rem;
+$display3-size:               3rem;
+$display4-size:               2.5rem;
+
+$lead-font-weight:            400;
+
+//Jumbotron
+$jumbotron-bg:                      transparent;
+
+// Cards
+$card-spacer-y:                     1.5rem;
+$card-spacer-x:                     1.5rem;
+$card-border-color:                 transparent;
+$card-cap-bg:                       transparent;
+$card-cap-color:                    null;
+$card-color:                        null;
+$card-bg:                           $white;
+$card-img-overlay-padding:          1.25rem;
+$fr-card-box-shadow:                0 1px 3px rgba(0, 0, 0, 0.13);
+
+// General Input
+$input-padding-y:                   .75rem;
+$input-placeholder-color:           $gray-500;
+$input-btn-padding-x:               1.25rem;
+$input-btn-padding-y:               .75rem;
+$input-btn-padding-x-lg:            1.375rem;
+$input-btn-padding-y-lg:            .8125rem;
+$input-bg:                          $white;
+$input-disabled-bg:                 transparent;
+$input-color:                       $gray-900;
+$label-color:                       inherit;
+/*
+$input-border-color:               ;
+$input-placeholder-color:          ;
+$input-focus-bg:                   ;
+$input-focus-box-shadow:           ;
+$input-focus-border-color:         ;
+$input-focus-color:                ;
+*/
+$input-btn-color:                   $gray-800;
+$input-btn-active-color:            $gray-900;
+
+$input-group-addon-bg:              $input-bg;
+
+//Button
+$btn-padding-x:                     $input-btn-padding-x;
+$btn-padding-y:                     $input-btn-padding-y;
+$btn-padding-y-lg:                  $input-btn-padding-y-lg;
+$btn-padding-x-lg:                  $input-btn-padding-x-lg;
+$btn-box-shadow:                    none;
+$btn-focus-box-shadow:              none;
+$btn-active-box-shadow:             none;
+
+// Close
+$close-font-weight:                 $font-weight-light;
+$close-color:                       $black !default;
+$close-text-shadow:                 none;
+
+
+// Custom form controls// Custom form controls
+$custom-control-indicator-bg:             $gray-400;
+$custom-control-indicator-checked-bg:     $primary;
+$custom-checkbox-indicator-border-color:  $gray-400;
+$custom-select-focus-border-color:        $gray-500;
+
+// Switches
+$fr-switch-bg:                          $gray-400;
+$fr-switch-toggled-bg:                  $primary;
+
+// List group
+$list-group-item-padding-y:         1.25rem;
+$list-group-item-padding-x:         1.5rem;
+$list-group-hover-bg:               $white;
+$list-group-active-bg:              $white;
+$fr-hover-list-color:               $list-group-active-bg;
+
+// Custom form controls
+$custom-control-gutter:             2rem;
+$custom-control-indicator-bg:       #fff;
+$custom-select-height:              3rem;
+
+// Toolbar / Navbar
+$fr-toolbar-background:             $white;
+$fr-application-text-color:         $gray-900;
+$fr-toolbar-color:                  $gray-900;
+$fr-toolbar-dropdown-color:         rgba(0, 0, 0, 0.5);
+
+//Navbar
+$navbar-padding-y:                  1.125rem;
+$navbar-padding-x:                  1.5rem;
+$nav-highlight-color:               $primary;
+$navbar-height:                     4.5rem;
+$fr-navbar-shadow:                  transparent;
+$fr-navbar-border:                  $gray-200;
+$navbar-toggler-padding-x:          0;
+$fr-navbar-toggler-border-color:    transparent;
+
+//Profile nav tavs
+$nav-tabs-border-color:                inherit;
+$nav-tabs-link-color:                  inherit;
+$nav-tabs-link-active-color:           inherit;
+$nav-highlight-color:                  inherit;
+
+// Sidebar
+$fr-sidebar-nav-width:                                   212px;
+$fr-sidebar-nav-minimized-width:                         60px;
+$fr-sidebar-nav-background-color:                        $white;
+$fr-sidebar-nav-brand-color:                             $white;
+$fr-sidebar-nav-link-color:                              $gray-700;
+$fr-sidebar-nav-link-border-color:                       transparent;
+$fr-sidebar-nav-link-hover-color:                        $dark;
+$fr-sidebar-nav-link-hover-background-color:             lighten($primary, 44%);
+$fr-sidebar-nav-link-active-color:                       $fr-sidebar-nav-link-hover-color;
+$fr-sidebar-nav-link-active-border-color:                $primary;
+$fr-sidebar-nav-link-active-background-color:            $fr-sidebar-nav-link-hover-background-color;
+$fr-sidebar-nav-shadow:                                  1px 0px 9px rgba(0,0,0,0.13);
+
+//Dropdown
+$dropdown-border-color:             $gray-300;
+$dropdown-link-active-color:        $gray-900;
+$dropdown-link-active-bg:           lighten($primary, 44%);
+$dropdown-link-hover-bg:            $dropdown-link-active-bg;
+$dropdown-header-color:             $gray-900;
+$dropdown-padding-y:                .25rem;
+$dropdown-item-padding-y:           .675rem;
+$dropdown-link-color:               $gray-700;
+
+// Alert
+$alert-padding-y:                   1.25rem;
+$alert-padding-x:                   1.25rem;
+$alert-border-width:                0;
+$fr-alert-text-color:               $gray-700;
+$fr-alert-dark-text-color:          $gray-100;
+$fr-alert-primary-bg-color:         lighten($primary,40%);
+$fr-alert-info-bg-color:            lighten($info,40%);
+$fr-alert-secondary-bg-color:       lighten($secondary,40%);
+$fr-alert-success-bg-color:         lighten($success,40%);
+$fr-alert-warning-bg-color:         lighten($warning,26%);
+$fr-alert-danger-bg-color:          lighten($danger,26%);
+$fr-alert-light-bg-color:           $white;
+$fr-alert-dark-bg-color:            darken($dark,8%);
+$fr-alert-box-shadow:               transparent;
+
+// Modal
+$modal-transition:                  transform .3s ease-out;
+$modal-content-bg:                  $white;
+$fr-modal-header-bg:                $modal-content-bg;
+$fr-modal-footer-bg:                $fr-modal-header-bg;
+
+
+
+//Pagination
+$pagination-border-color:                transparent;
+$pagination-disabled-border-color:       transparent;
+$pagination-border-radius:               $border-radius;
+$pagination-hover-bg:                    $gray-100;
+$pagination-hover-border-color:          transparent;
+$pagination-active-border-color:         transparent;
+$pagination-disabled-border-color:       transparent;
+
+//Table
+$table-bg:                    transparent;
+$table-accent-bg:             $gray-100;
+$table-hover-bg:              $gray-100;
+$table-cell-padding:          1.5rem 1rem;
+$table-cell-padding-sm:       .5rem;
