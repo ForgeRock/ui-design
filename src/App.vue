@@ -1,6 +1,7 @@
 <template>
     <div id="app">
         <div id="wrapper" :class="[{'toggled': toggled}]">
+
             <div id="appSidebarWrapper" class="fr-sidebar position-fixed">
                 <ul class="sidebar-nav position-static scrollable">
                     <li class="sidebar-brand">
@@ -261,12 +262,16 @@ export default {
                     .btn-account,
                     .btn.dropdown-toggle {
                         &:after {
-                          content: "\F107";
-                          position: absolute;
-                          font-family: "Font Awesome 5 Pro";
-                          right: 11px;
-                          top: 25px;
-                          font-size: .875rem;
+                            content: "\F107";
+                            position: absolute;
+                            font-family: "Font Awesome 5 Pro";
+                            right: 8px;
+                            top: 25px;
+                            width: 15px;
+                            height: 15px;
+                            font-size: .875rem;
+                            border: none;
+                            display: inline-block;
                         }
                     }
                 }
@@ -285,6 +290,9 @@ export default {
                 background-color: transparent;
                 display: block;
                 border-radius: 0;
+                &:after {
+                    display: none;
+                }
             }
             .sidebar-nav {
                 position: absolute;
@@ -504,12 +512,16 @@ export default {
                 .btn.dropdown-toggle {
                     padding: 10px 30px 10px 12px;
                     &:after {
-                      content: "\F107";
-                      position: absolute;
-                      font-family: "Font Awesome 5 Pro";
-                      right: 11px;
-                      top: 25px;
-                      font-size: .875rem;
+                        content: "\F107";
+                        position: absolute;
+                        font-family: "Font Awesome 5 Pro";
+                        right: 11px;
+                        top: 25px;
+                        width: 15px;
+                        height: 15px;
+                        font-size: .875rem;
+                        border: none;
+                        display: inline-block;
                     }
                 }
                 .sidebar-brand-logo {
