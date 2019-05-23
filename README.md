@@ -1,31 +1,54 @@
-<h1>ForgeRock UI Design System</h1>
+<div align="center">
+  <img width="120" src="logo.png">
+  <h1>ForgeRock UI Design System</h1>
+  Description TODO.
+  <p>
+</div>
 
-## Project setup
-```
-npm install
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Development](#development)
+  - [Project Structure](#project-structure)
+- [Contributing](#contributing)
+
+## Prerequisites
+
+Ruby must be installed on your operating system to execute the Design System locally.
+
+To switch between Ruby versions with ease, we recommend using [RVM](rvm).
+
+## Installation
+
+```sh
+gem install bundler jekyll
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run dev
+## Usage
+
+```sh
+bundle exec jekyll serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
+For live reload, use `jekyll serve --livereload`.
+
+## Development
+
+### Project Structure
+
+```sh
+_docs_/ # ?.
+_includes/ # ?.
+_layouts/ # ?.
+src/ # Source code.
+├── assets/ # ?.
+├── patterns/ # ?.
+styleguide/ # ?.
+└── ...
 ```
 
-### Run your tests
-```
-npm run test
-```
+## Contributing
 
-### Lints and fixes files
-```
-npm run lint
-```
+Contribute to ForgeRock UI Design System by opening a Pull Request.
 
-### Run your unit tests
-```
-npm run test:unit
-```
+[rvm]: https://rvm.io
