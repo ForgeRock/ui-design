@@ -21,13 +21,13 @@ To switch between Ruby versions with ease, we recommend using [RVM](rvm).
 ## Installation
 
 ```sh
-gem install bundler jekyll
+gem install jekyll
 ```
 
 ## Usage
 
 ```sh
-bundle exec jekyll serve
+jekyll serve
 ```
 
 For live reload, use `jekyll serve --livereload`.
