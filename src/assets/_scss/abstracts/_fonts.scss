@@ -37,23 +37,3 @@
   font-weight: bold;
   font-style: italic;
 }
-
-// Slab
-@font-face {
-  font-family: 'Roboto Slab';
-  src:  url('../fonts/roboto-slab/RobotoSlab-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Roboto Slab';
-  src: url('../fonts/roboto-slab/RobotoSlab-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Roboto Slab';
-  src: url('../fonts/roboto-slab/RobotoSlab-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}

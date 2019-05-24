@@ -4,16 +4,16 @@
   margin-bottom: $margin_massive;
   border-bottom: $base-border;
   color: $heading-font-color;
-  
+
   @media only screen and (max-width: $large_screen) {
     padding: $m_margin_massive 0;
     margin-bottom: $m_margin_massive;
   }
-  
+
   .sg_contain {
     display: flex;
     flex-direction: row;
-    
+
     @media only screen and (max-width: $extended_screen) {
       flex-direction: column;
     }
@@ -28,9 +28,9 @@
     display: flex;
     align-items: center;
     margin-bottom: $margin;
-    font-weight: bold;
+    font-weight: 300;
     text-transform: capitalize;
-    
+
     // Maturity Count
     .count {
       display: flex;
@@ -64,13 +64,13 @@
   .sub_title {
     margin-bottom: $margin;
   }
-  
+
   // Page Navigation
   #nav {
     flex: 1 0 auto;
     width: calc(#{$right_rail} - #{$margin_huge});
     padding-left: $margin_huge;
-    
+
     ul {
       padding: 0;
       margin: 0;
@@ -78,7 +78,7 @@
     }
     li a {
       padding: $margin_small /2 0;
-      
+
       &:before {
         content: 'remove';
         font-family: $icon;
@@ -88,7 +88,7 @@
         margin-right: $margin_small;
       }
     }
-    
+
     @media only screen and (max-width: $extended_screen) {
       width: auto;
       padding-left: 0;

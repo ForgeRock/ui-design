@@ -4,7 +4,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-
+@import "../../theme-variables.scss";
 @import "functions";
 @import "variables";
 @import "mixins";
@@ -42,5 +42,3 @@
 @import "spinners";
 @import "utilities";
 @import "print";
-
-@import "../../theme-variables.scss";

@@ -9,7 +9,7 @@ body#sg {
   font-size: $base-font-size;
   font-family: $base-font-family;
   line-height: $base-line-height;
-  background: $white;
+  background: $smoke;
 }
 
 body#sg {
@@ -27,8 +27,8 @@ body#sg {
 .sg-pusher {
   position: relative;
   min-height: 100%;
-  margin: 0 $margin_large;
-  
+  margin: 0;
+
   @media only screen and (max-width: $medium_screen) {
     margin: 0 $margin;
   }
@@ -37,7 +37,7 @@ body#sg {
 // Sidebar Button Styles
 .sg_sidebar_button {
   display: none;
-  
+
   @media only screen and (max-width: $large_screen) {
     font-size: 2rem;
     height: 2rem;
@@ -108,9 +108,11 @@ body#sg {
   min-height: 100%;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
-  
+  -webkit-box-shadow: 1px 0px 9px rgba(0, 0, 0, 0.13);
+  box-shadow: 1px 0px 9px rgba(0, 0, 0, 0.13);
+
   @media only screen and (max-width: $large_screen) {
-    left: -$left_rail;  
+    left: -$left_rail;
   }
 }
 .sg-main {
@@ -123,12 +125,12 @@ body#sg {
   max-width: 50rem;
   margin: 0 auto;
   padding: 0 $right_rail 0 $left_rail + 20;
-  
+
   @media only screen and (max-width: $extended_screen) {
     max-width: 52rem;
     padding: 0 0 0 $left_rail + 20;
   }
   @media only screen and (max-width: $large_screen) {
-    padding: 0;  
+    padding: 0;
   }
 }

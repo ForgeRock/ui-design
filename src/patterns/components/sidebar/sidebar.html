@@ -1,0 +1,66 @@
+---
+title: Sidebar
+styles: components/sidebar.scss
+info: Sidebar info here
+maturity: draft
+---
+<nav id="sidebar1" class="toggled overflow-hidden pr-4 border mb-4">
+    <div class="fr-sidebar position-relative">
+      <ul class="sidebar-nav position-static scrollable" style="max-height: 330px;">
+        <li class="sidebar-brand position-static">
+          <div class="d-block h-100 w-100 btn-group b-dropdown dropdown position-static" id="dropdown-1">
+            <!----><button aria-expanded="false" aria-haspopup="true" class="btn btn-account dropdown-toggle dropdown-toggle-no-caret" id="dropdown-1__BV_toggle_" type="button">
+            <div class="media">
+              <img alt="Barbara Jensen's Avatar" class="my-1 rounded-circle" height="34" src="/src/assets/images/avatar-bjensen.jpg" width="34">
+              <div class="media-body sidebar-item-text pl-3">
+                <h5 class="my-0">Rock Financial</h5><small>Barbara Jensen</small>
+              </div>
+            </div></button>
+            <div aria-labelledby="dropdown-1__BV_toggle_" class="dropdown-menu" role="menu" tabindex="-1">
+              <div class="px-4 py-2">
+                <h5 class="my-0">Rock Financial</h5><span class="text-muted">Developer Edition</span>
+              </div><a class="dropdown-item" href="#" role="menuitem" target="_self"><i class="fal fa-cog mr-3"></i>Environment settings</a><a class="dropdown-item" href="#" role="menuitem" target="_self"><i class="fal fa-sync-alt mr-3"></i>Switch Environment</a>
+              <div class="dropdown-divider" role="separator"></div><a class="dropdown-item" href="#" role="menuitem" target="_self">
+              <div class="media">
+                <img alt="Barbara Jensen's Avatar" class="rounded-circle align-self-center" height="34" src="/src/assets/images/avatar-bjensen.jpg" width="34">
+                <div class="media-body sidebar-item-text pl-3">
+                  <h5 class="my-0">Barbara Jensen</h5><span class="text-muted">bjensen@example.com</span>
+                </div>
+              </div></a>
+              <div class="dropdown-divider" role="separator"></div><a class="dropdown-item" href="#" role="menuitem" target="_self"><i class="fal fa-sign-out-alt mr-3"></i>Sign Out</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a class="router-link-active" href="#/"><i class="fal fa-fw mr-3 fa-tachometer"></i><span class="sidebar-item-text">Dashboard</span></a>
+        </li>
+        <li>
+          <a class="" href="#/"><i class="fal fa-fw mr-3 fa-th"></i><span class="sidebar-item-text">Applications</span></a>
+        </li>
+        <li>
+          <a class="" href="#/"><i class="fal fa-fw mr-3 fa-database"></i><span class="sidebar-item-text">Identities</span></a>
+        </li>
+        <li>
+          <a class="" href="#/"><i class="fal fa-fw mr-3 fa-sign-in-alt"></i><span class="sidebar-item-text">Authentication</span></a>
+        </li>
+        <li>
+          <a class="" href="#/"><i class="fal fa-fw mr-3 fa-check-circle"></i><span class="sidebar-item-text">Rules</span></a>
+        </li>
+        <li class="sidebar-divider my-3"></li>
+        <li>
+          <a aria-controls="settingsSubmenu1" aria-expanded="false" class="submenu-toggle collapsed" href="#" role="button" target="_self"><i class="fal fa-fw mr-3 fa-cog"></i><span class="sidebar-item-text">Settings</span></a>
+          <div class="collapse" id="settingsSubmenu1" style="display: none;">
+            <ul class="p-0 list-unstyled">
+              <li>
+                <a class="" href="#/"><span class="sidebar-item-text">Remote Connections</span></a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        </ul>
+        <div class="sidebar-bottom d-none d-md-block">
+          <a target="_self" href="#" class="expand-sidebar"><i class="fal fa-fw mr-3 fa-columns"></i><span class="sidebar-item-text">Toggle sidebar</span></a>
+        </div>
+    </div>
+    <div class="sidebar-overlay w-100 h-100 fixed-top"></div>
+</nav>

@@ -5,12 +5,12 @@ $medium_screen: 800px;
 $small_screen: 480px;
 
 // Navigation Rails
-$left_rail: 300px;
-$right_rail: 300px;
+$left_rail: 212px;
+$right_rail: 212px;
 
 // Type Systems
-$sans-serif: 'HKGrotesk', sans-serif;
-$base-font-family: 'HKGrotesk', sans-serif;
+$sans-serif: "Roboto", sans-serif;
+$base-font-family: "Roboto", sans-serif;
 $icon: 'Material Icons';
 $code: Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;
 
@@ -38,15 +38,26 @@ $m_typo_hawk: 1.25rem;
 $micro-font-size: 70%;
 $small-font-size: 80%;
 
+// FR Grays
+$gray-100: #F6F8FA;
+$gray-200: #E7EEF4;
+$gray-300: #D3D8E0;
+$gray-400: #C0C9D5;
+$gray-500: #77869E;
+$gray-600: #5E6D82;
+$gray-700: #455469;
+$gray-800: #324054;
+$gray-900: #23282E;
+
 // Brand Colors
 $white: #fff;
-$smoke: whitesmoke;
+$smoke: $gray-100;
 $black: #000;
-$red: orangered;
-$blue: dodgerblue;
-$green: #16b491;
-$amber: orange;
-$grey: lightgrey;
+$red: #F7685B;
+$blue: #109CF1;
+$green: #2ED47A;
+$amber: #fd7e14;
+$grey: $gray-500;
 
 // Animations
 $base-duration: .2s;
@@ -63,7 +74,7 @@ $code-font-color: #ffffff;
 
 // Borders
 $base-border-radius: 1rem;
-$base-border: 1px solid $smoke;
+$base-border: 1px solid $gray-300;
 
 // Margins
 $margin: 1rem;
