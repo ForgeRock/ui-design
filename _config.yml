@@ -22,7 +22,7 @@ destination: _site          ## Output folder
 ## Style Guide Shell Settings
 
 ## These settings are used in when generating the style guide shell
-sg_title: ForgeRock Design System
+sg_title: ForgeRock UI Design System
 sg_version: 3.0
 sg_keywords: jekyll, style guide, playbook, design, code 
 sg_author: Matthew Elsom
