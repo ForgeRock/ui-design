@@ -18,6 +18,9 @@
 @media (max-width: map-get($container-max-widths, 'lg')) {
   .sidebar {
     width: $fr-sidebar-width-sm;
+    .nav-link > span {
+      display: none;
+    }
     &:hover {
       width: $fr-sidebar-width-lg;
       .nav-link > span {
