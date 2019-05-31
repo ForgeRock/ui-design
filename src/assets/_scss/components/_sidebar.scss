@@ -14,15 +14,15 @@ $large: map-get($container-max-widths, 'lg');
 
 @media (max-width: $medium) {
   .sidebar {
-    margin-left: -$sidebar-width-sm;
+    margin-left: -$fr-sidebar-width-sm;
   }
 }
 
 @media (max-width: $large) {
   .sidebar {
-    width: $sidebar-width-sm;
+    width: $fr-sidebar-width-sm;
     &:hover {
-      width: $sidebar-width-lg;
+      width: $fr-sidebar-width-lg;
       .nav-link > span {
         display: block;
       }

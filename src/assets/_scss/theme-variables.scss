@@ -290,22 +290,22 @@ $fr-toolbar-dropdown-color: rgba(0, 0, 0, 0.5) !default;
 // Custom ForgeRock UI Components
 
 // Sidebar
-$sidebar-width-lg: 14.25em;
-$sidebar-width-sm: 3.75em;
+$fr-sidebar-width-lg: 14.25em;
+$fr-sidebar-width-sm: 3.75em;
 
 // Navbar Sidebar
-$navbar-sidebar-fontsize: 0.875rem;
-$navbar-sidebar-icon-fontsize: 1.125rem;
-$navbar-sidebar-nav-link-padding: 0.938rem 1.25rem;
+$fr-navbar-sidebar-fontsize: 0.875rem;
+$fr-navbar-sidebar-icon-fontsize: 1.125rem;
+$fr-navbar-sidebar-nav-link-padding: 0.938rem 1.25rem;
 
 // Dark Theme
-$navbar-sidebar-dark-nav-link-color: rgba($white, 0.43);
-$navbar-sidebar-dark-nav-link-active-color: $white;
-$navbar-sidebar-dark-nav-link-border: 3px solid transparent;
-$navbar-sidebar-dark-nav-link-hover-color: $white;
-$navbar-sidebar-dark-nav-link-hover-bgcolor: rgba($gray-900, 0.5);
-$navbar-sidebar-dark-nav-link-hover-border: 3px solid $blue;
-$navbar-sidebar-dark-dropdown-bgcolor: rgba(#121212, 0.13);
+$fr-navbar-sidebar-dark-nav-link-color: rgba($white, 0.43);
+$fr-navbar-sidebar-dark-nav-link-active-color: $white;
+$fr-navbar-sidebar-dark-nav-link-border: 3px solid transparent;
+$fr-navbar-sidebar-dark-nav-link-hover-color: $white;
+$fr-navbar-sidebar-dark-nav-link-hover-bgcolor: rgba($gray-900, 0.5);
+$fr-navbar-sidebar-dark-nav-link-hover-border: 3px solid $blue;
+$fr-navbar-sidebar-dark-dropdown-bgcolor: rgba(#121212, 0.13);
 
 // Sign up form
 $fr-signup-header-wrapper-height: 5.25rem;
