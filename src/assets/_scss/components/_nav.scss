@@ -4,6 +4,10 @@
   overflow: auto;
   padding: 0;
 
+  .navbar-nav {
+    flex-direction: column;
+  }
+
   .nav-link {
     border-left: $navbar-sidebar-dark-nav-link-border;
     display: flex;
