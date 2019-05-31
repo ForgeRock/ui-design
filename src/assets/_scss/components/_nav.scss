@@ -21,6 +21,12 @@
     }
   }
 
+  @media (max-width: map-get($container-max-widths, 'lg')) {
+    .nav-link > span {
+      display: none;
+    }
+  }
+
   .dropdown-menu {
     background-color: transparent;
     border: none;
