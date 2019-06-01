@@ -17,11 +17,11 @@ body#sg {
   color: $base-font-color;
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
-  -webkit-font-feature-settings: "kern" 1,"liga" 1,"frac" 1,"pnum" 1;
-  -moz-font-feature-settings: "kern" 1,"liga" 1,"frac" 1,"pnum" 1;
-  -ms-font-feature-settings: "kern" 1,"liga" 1,"frac" 1,"pnum" 1;
-  font-feature-settings: "kern" 1,"liga" 1,"frac" 1,"pnum" 1;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-feature-settings: 'kern' 1, 'liga' 1, 'frac' 1, 'pnum' 1;
+  -moz-font-feature-settings: 'kern' 1, 'liga' 1, 'frac' 1, 'pnum' 1;
+  -ms-font-feature-settings: 'kern' 1, 'liga' 1, 'frac' 1, 'pnum' 1;
+  font-feature-settings: 'kern' 1, 'liga' 1, 'frac' 1, 'pnum' 1;
   -webkit-font-smoothing: antialiased;
 }
 .sg-pusher {
@@ -73,7 +73,7 @@ body#sg {
     .sg-main {
       position: absolute;
       left: $left_rail + 20;
-      opacity: .2;
+      opacity: 0.2;
     }
   }
 }
@@ -93,7 +93,7 @@ body#sg {
     .sg-main {
       position: absolute;
       left: $left_rail - 30;
-      opacity: .2;
+      opacity: 0.2;
     }
   }
 }

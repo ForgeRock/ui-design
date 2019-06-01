@@ -278,8 +278,11 @@ $table-accent-bg: $gray-100;
 $table-hover-bg: $gray-100;
 $table-cell-padding: 1.5rem;
 $table-cell-padding-sm: 0.5rem;
-$fr-table-head-weight: 500;
+$fr-table-head-weight: 600;
 $fr-table-head-border: 1px;
+
+$table-color: $gray-900;
+$table-border-color: $gray-300;
 
 // Toolbar / Navbar
 $fr-toolbar-background: $white !default;
