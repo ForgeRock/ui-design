@@ -45,24 +45,6 @@
       }
     }
   }
-
-  .dropdown-toggle {
-    &::after {
-      border: none;
-      content: 'expand_more';
-      font-family: 'Material Icons Outlined';
-      margin: 0;
-      position: absolute;
-      right: 20px;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-    &[aria-expanded='true'] {
-      &::after {
-        content: 'expand_less';
-      }
-    }
-  }
 }
 
 .navbar-sidebar.navbar-dark {

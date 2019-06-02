@@ -164,13 +164,13 @@ $btn-active-box-shadow: none;
 // Cards
 $card-spacer-y: 1.5rem;
 $card-spacer-x: 1.5rem;
-$fr-card-border: none;
 $card-border-color: transparent;
 $card-cap-bg: transparent;
 $card-cap-color: null;
 $card-color: null;
 $card-bg: $white;
 $card-img-overlay-padding: 1.25rem;
+$fr-card-border: none;
 $fr-card-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
 
 // Close
@@ -278,7 +278,7 @@ $table-accent-bg: $gray-100;
 $table-hover-bg: $gray-100;
 $table-cell-padding: 1.5rem;
 $table-cell-padding-sm: 0.5rem;
-$fr-table-head-weight: 600;
+$fr-table-head-weight: 500;
 $fr-table-head-border: 1px;
 
 $table-color: $gray-900;

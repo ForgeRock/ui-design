@@ -1,0 +1,5 @@
+@mixin material-icon($content) {
+  border: none;
+  content: $content;
+  font-family: 'Material Icons Outlined';
+}

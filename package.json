@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ForgeRock/ui-design/issues"
   },
-  "homepage": "https://github.com/ForgeRock/ui-design#readme"
+  "homepage": "https://github.com/ForgeRock/ui-design#readme",
+  "dependencies": {
+    "typed-css-modules": "^0.4.2"
+  }
 }

@@ -1,4 +1,8 @@
 .card {
-    -webkit-box-shadow: $fr-card-box-shadow;
-    box-shadow: $fr-card-box-shadow;
+  box-shadow: $fr-card-box-shadow;
+  border: $fr-card-border;
+
+  > .table {
+    margin-bottom: 0;
+  }
 }
