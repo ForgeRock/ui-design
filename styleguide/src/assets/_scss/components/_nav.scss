@@ -1,47 +1,52 @@
+i.material-icons:before {
+  display: none;
+}
 .navbar-sidebar {
   display: block;
   font-size: $fr-navbar-sidebar-fontsize;
-  overflow: auto;
   padding: 0;
 
   .navbar-nav {
     flex-direction: column;
-  }
 
-  .nav-link {
-    border-left: $fr-navbar-sidebar-dark-nav-link-border;
-    display: flex;
-    height: 3.25rem;
-    padding: $fr-navbar-sidebar-nav-link-padding;
-    position: relative;
-    transition: background-color, color 0.2s ease;
-    > .material-icons {
-      font-size: $fr-navbar-sidebar-icon-fontsize;
-      line-height: 23px;
-    }
-  }
-
-  .dropdown-menu {
-    background-color: transparent;
-    border: none;
-    display: block;
-    font-size: 0.875rem;
-    height: 0;
-    margin: 0;
-    padding: 0;
-    transition: height 0.2s ease;
-
-    &.show {
-      height: 52px;
-      .nav-link {
-        display: block;
+    .nav-link {
+      border-left: $fr-navbar-sidebar-dark-nav-link-border;
+      display: flex;
+      overflow: hidden;
+      padding: $fr-navbar-sidebar-nav-link-padding;
+      position: relative;
+      transition: background-color 0.2s ease, border-left-color 0.35s ease;
+      > .material-icons {
+        font-size: $fr-navbar-sidebar-icon-fontsize;
+        line-height: 1.244;
       }
     }
 
-    .nav-link {
-      display: none;
-      > span {
-        margin-left: 2.15rem;
+    .dropdown-menu {
+      background-color: transparent;
+      border: none;
+      display: block;
+      font-size: 0.875rem;
+      margin: 0;
+      padding: 0;
+      position: initial;
+
+      .nav-item {
+        height: 0;
+        overflow: hidden;
+        transition: height 0.2s ease;
+      }
+
+      .nav-link {
+        > span {
+          margin-left: 2.15rem;
+        }
+      }
+
+      &.show {
+        .nav-item {
+          height: 3.25rem;
+        }
       }
     }
   }
