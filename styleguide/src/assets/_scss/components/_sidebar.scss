@@ -1,14 +1,14 @@
 .sidebar.sidebar-dark {
   background-color: $gray-800;
-  box-shadow: $fr-navbar-sidebar-dark-box-shadow;
   height: 100vh;
   left: 0;
   position: fixed;
 }
 
 .sidebar {
-  width: 13.25rem;
+  box-shadow: $fr-navbar-sidebar-dark-box-shadow;
   transition: margin-left 0.2s ease, width 0.2s ease;
+  width: 13.25rem;
 }
 
 .sidebar {
@@ -23,6 +23,7 @@
 
 @media (max-width: map-get($container-max-widths, 'md')) {
   .sidebar {
+    box-shadow: none;
     margin-left: -$fr-sidebar-width-sm;
   }
 }
@@ -30,6 +31,10 @@
 @media (max-width: map-get($container-max-widths, 'lg')) {
   .sidebar {
     width: $fr-sidebar-width-sm;
+
+    > .dropdown > .media > .dropdown-toggle {
+      display: none;
+    }
 
     .nav-link > span {
       display: none;
@@ -45,6 +50,10 @@
       width: $fr-sidebar-width-lg;
 
       .nav-link > span {
+        display: block;
+      }
+
+      > .dropdown > .media > .dropdown-toggle {
         display: block;
       }
 

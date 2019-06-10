@@ -4,6 +4,7 @@ Files inside this folder should contain all styles relating
 to a reusable component.
 */
 //Import Component files
+@import 'body';
 @import 'button';
 @import 'button-group';
 @import 'blockquote';
@@ -14,3 +15,4 @@ to a reusable component.
 @import 'on-page-alerts';
 @import 'sidebar';
 @import 'table';
+@import 'typography';
