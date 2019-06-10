@@ -3,6 +3,7 @@
   height: 100vh;
   left: 0;
   position: fixed;
+  z-index: $zindex-fixed;
 }
 
 .sidebar {

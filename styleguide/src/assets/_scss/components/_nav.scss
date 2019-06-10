@@ -1,6 +1,11 @@
 i.material-icons:before {
   display: none;
 }
+
+#app > .navbar {
+  border: 1px solid $gray-200;
+}
+
 .navbar-sidebar {
   display: block;
   font-size: $fr-navbar-sidebar-fontsize;

@@ -1,3 +1,14 @@
 body {
-  margin: 0 0 0 212px;
+  margin: 0 0 0 13.25rem;
+}
+@media (max-width: map-get($container-max-widths, 'md')) {
+  body {
+    margin: 0;
+  }
+}
+
+@media (min-width: map-get($container-max-widths, 'md')) and (max-width: map-get($container-max-widths, 'lg')) {
+  body {
+    margin: 0 0 0 $fr-sidebar-width-sm;
+  }
 }
