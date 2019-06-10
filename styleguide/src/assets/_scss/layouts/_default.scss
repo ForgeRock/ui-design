@@ -1,7 +1,8 @@
 body {
   background-color: white;
+  color: $base-font-color;
   font-family: $roboto;
   font-size: $base-font-size;
   line-height: $base-line-height;
-  color: $base-font-color;
+  padding-left: $fr-sidebar-width-lg;
 }

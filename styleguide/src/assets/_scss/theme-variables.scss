@@ -82,7 +82,7 @@ $border-color: $gray-300;
 //General
 $body-bg: $gray-100;
 $body-color: $gray-600;
-$headings-color: $gray-900;
+$headings-color: inherit;
 $font-size-base: 1rem !default;
 $font-weight-bold: 500;
 $font-weight-light: 300;
@@ -293,7 +293,7 @@ $fr-toolbar-dropdown-color: rgba(0, 0, 0, 0.5) !default;
 // Custom ForgeRock UI Components
 
 // Sidebar
-$fr-sidebar-width-lg: 14.25em;
+$fr-sidebar-width-lg: 13.25em;
 $fr-sidebar-width-sm: 3.75em;
 
 // Navbar Sidebar
@@ -309,6 +309,7 @@ $fr-navbar-sidebar-dark-nav-link-hover-color: $white;
 $fr-navbar-sidebar-dark-nav-link-hover-bgcolor: rgba($gray-900, 0.5);
 $fr-navbar-sidebar-dark-nav-link-hover-border: 3px solid $blue;
 $fr-navbar-sidebar-dark-dropdown-bgcolor: rgba(#121212, 0.13);
+$fr-navbar-sidebar-dark-box-shadow: 1px 0px 9px rgba(0, 0, 0, 0.45);
 
 // Sign up form
 $fr-signup-header-wrapper-height: 5.25rem;

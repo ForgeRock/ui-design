@@ -16,6 +16,7 @@ i.material-icons:before {
       padding: $fr-navbar-sidebar-nav-link-padding;
       position: relative;
       transition: background-color 0.2s ease, border-left-color 0.35s ease;
+      white-space: nowrap;
       > .material-icons {
         font-size: $fr-navbar-sidebar-icon-fontsize;
         line-height: 1.244;
@@ -28,8 +29,10 @@ i.material-icons:before {
       display: block;
       font-size: 0.875rem;
       margin: 0;
+      min-width: auto;
       padding: 0;
       position: initial;
+      z-index: inherit;
 
       .nav-item {
         height: 0;

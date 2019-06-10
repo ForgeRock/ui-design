@@ -4,8 +4,23 @@ maturity: draft
 ---
 
 <div class="card m-4">
-  <div class="toolbar">
-    <button type="button" class="btn btn-primary">New Application</button>
+  <div class="btn-toolbar justify-content-between">
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary">New Application</button>
+      <button type="button" class="btn btn-danger">Delete</button>
+    </div>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <div class="input-group-text" id="btnGroupAddon">@</div>
+      </div>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Input group example"
+        aria-label="Input group example"
+        aria-describedby="btnGroupAddon"
+      />
+    </div>
   </div>
   <table class="table table-hover table-responsive-sm">
     <thead>
