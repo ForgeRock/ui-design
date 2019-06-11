@@ -11,6 +11,10 @@ i.material-icons:before {
   font-size: $fr-navbar-sidebar-fontsize;
   padding: 0;
 
+  > .navbar-toggler {
+    opacity: 0.5;
+  }
+
   .navbar-nav {
     flex-direction: column;
 
@@ -24,7 +28,7 @@ i.material-icons:before {
       white-space: nowrap;
       > .material-icons {
         font-size: $fr-navbar-sidebar-icon-fontsize;
-        line-height: 1.244;
+        line-height: 1.244rem;
       }
     }
 
