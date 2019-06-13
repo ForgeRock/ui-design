@@ -1,10 +1,18 @@
 ---
 title: Typography
-info: Roboto fonts have been selected as the primary fonts for this system.
+info: All text is set in Roboto.
+nav: true
 ---
 
 {% include pattern_block.html url='/src/patterns/foundations/typography/roboto.html' %}
 
+{% include pattern_block.html url='/src/patterns/foundations/typography/headings.html' %}
+
+{% include pattern_block.html url='/src/patterns/foundations/typography/display-headings.html' %}
+
+{% include pattern_block.html url='/src/patterns/foundations/typography/lead-paragraphs.html' %}
+
+{% include pattern_block.html url='/src/patterns/components/blockquote/blockquote.html' %}
 
 ---
 

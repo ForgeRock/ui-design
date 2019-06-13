@@ -1,5 +1,5 @@
 .sg_sidebar {
-  color: $white;
+  color: $gray-600;
   background: $white;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
@@ -83,6 +83,9 @@
       padding: $margin;
       padding-bottom: $margin_small;
       margin-bottom: 0;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: .75rem;
     }
     li {
       border-top: none;

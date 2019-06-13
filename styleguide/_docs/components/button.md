@@ -30,22 +30,14 @@ Outline and Link buttons are used most frequently and can be used multiple times
 
 {% include pattern_block.html url='/src/patterns/components/button/block_button.html' %}
 
-Use block buttons on small self-service containers (eg. 'Sign in').
-
 {% include pattern_block.html url='/src/patterns/components/button/inverse_button.html' %}
-
-Use the inverse button on dark backgrounds.
 
 {% include pattern_block.html url='/src/patterns/components/button/destructive_button.html' %}
 
-This button is used to indicate a destructive action to the user, like permanently erasing data.
-
-{% include pattern_block.html url='/src/patterns/components/button/text_destructive_button.html' %}
-
-This button is used to indicate a destructive action to the user, like permanently erasing data. Use this version when the Destructive button would be too distracting to the experience.
+{% include pattern_block.html url='/src/patterns/components/button/outline_destructive_button.html' %}
 
 {% include pattern_block.html url='/src/patterns/components/button/disabled_button.html' %}
 
 {% include pattern_block.html url='/src/patterns/components/button/icon_button.html' %}
 
-Use icon buttons to reinforce button action (eg. '+ New')
+{% include pattern_block.html url='/src/patterns/components/button/icon_only_button.html' %}
