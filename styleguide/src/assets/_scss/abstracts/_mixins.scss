@@ -14,3 +14,36 @@
     @content;
   }
 }
+
+// $state = opened, closed
+@mixin sidebar-toggle($state) {
+  $display: block;
+  $width: $fr-sidebar-width-lg;
+
+  @if $state == 'closed' {
+    $display: none;
+    $width: $fr-sidebar-width-sm;
+  }
+
+  width: $width;
+
+  > .dropdown > .media > .dropdown-toggle,
+  .nav-item.dropdown > .dropdown-menu {
+    display: $display;
+  }
+
+  > .navbar-sidebar > .navbar-nav > .nav-item > .nav-link {
+    > span {
+      display: $display;
+    }
+
+    &::after {
+      display: $display;
+    }
+  }
+}
+
+@mixin sidebar-hidden {
+  box-shadow: none;
+  margin-left: -$fr-sidebar-width-lg;
+}

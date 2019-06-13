@@ -5,16 +5,15 @@ html {
 body {
   line-height: normal;
   margin: 0 0 0 13.25rem;
-}
-
-@include media-breakpoint-down(md) {
-  body {
-    margin: 0 0 0 $fr-sidebar-width-sm;
-  }
+  transition: margin 0.2s ease;
 }
 
 @include media-breakpoint-down(sm) {
   body {
-    margin: 0;
+    margin: 0 !important;
   }
+}
+
+body.sidebar-toggled-closed {
+  margin: 0 0 0 $fr-sidebar-width-sm;
 }

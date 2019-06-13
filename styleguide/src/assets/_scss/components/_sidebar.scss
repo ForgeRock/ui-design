@@ -1,15 +1,25 @@
 .sidebar.sidebar-dark {
   background-color: $gray-800;
-  height: 100vh;
-  left: 0;
-  position: fixed;
-  z-index: $zindex-fixed;
+}
+
+body.sidebar-toggled-open .sidebar {
+  @include sidebar-toggle('open');
+}
+
+body.sidebar-toggled-closed .sidebar {
+  @include sidebar-toggle('closed');
+  &:hover {
+    @include sidebar-toggle('open');
+  }
 }
 
 .sidebar {
   box-shadow: $fr-navbar-sidebar-dark-box-shadow;
+  height: 100vh;
+  left: 0;
+  position: fixed;
   transition: margin-left 0.2s ease, width 0.2s ease;
-  width: 13.25rem;
+  z-index: $zindex-fixed;
 }
 
 .sidebar {
@@ -22,48 +32,14 @@
   }
 }
 
-@include media-breakpoint-up(md) {
-  .sidebar:not(.sidebar-toggled):hover {
-    width: $fr-sidebar-width-lg;
-    .nav-link > span {
-      display: block;
-    }
-
-    > .dropdown > .media > .dropdown-toggle {
-      display: block;
-    }
-
-    .dropdown-toggle {
-      &::after {
-        display: block;
-      }
-    }
-  }
-}
-
-@include media-breakpoint-down(md) {
-  .sidebar:not(.sidebar-toggled) {
-    width: $fr-sidebar-width-sm;
-
-    > .dropdown > .media > .dropdown-toggle {
-      display: none;
-    }
-
-    .nav-link > span {
-      display: none;
-    }
-
-    .dropdown-toggle {
-      &::after {
-        display: none;
-      }
-    }
-  }
-}
-
 @include media-breakpoint-down(sm) {
-  .sidebar {
-    box-shadow: none;
-    margin-left: -$fr-sidebar-width-sm;
+  body .sidebar {
+    @include sidebar-hidden;
+  }
+
+  body.sidebar-toggled-mobile .sidebar {
+    @include sidebar-toggle('open');
+    box-shadow: $fr-navbar-sidebar-dark-box-shadow;
+    margin-left: 0;
   }
 }
