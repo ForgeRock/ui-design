@@ -1,0 +1,12 @@
+.media {
+  > img {
+    height: 2.25rem;
+    width: 2.25rem;
+  }
+
+  > .media-body {
+    > %headings {
+      margin-bottom: 0;
+    }
+  }
+}

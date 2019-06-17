@@ -1,0 +1,32 @@
+---
+title: Input Group
+styles: base/input.scss
+info: Attach add-ons to inputs using input groups. Use borderless add-ons for a more integrated look by adding <code>border-left-0</code> or <code>border-right-0</code> and <code>pl-0</code> or <code>pr-0</code> on the input (depending on whether you're using prepended or appended add-on)
+maturity: draft
+---
+<div class="p-1">
+    <div class="form-group">
+        <div class="form-label-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">@</span>
+            </div>
+            <div class="form-label-group-input">
+                <input type="text" class="form-control border-left-0 pl-0" id="basicInput1" placeholder="Label" aria-label="Label" aria-describedby="basic-addon1">
+                <label for="basicInput1" class="pl-0">Label</label>
+            </div>
+        </div>
+        <small id="basicInputHelp1" class="form-text text-muted">Help text for this field.</small>
+    </div>
+    <div class="form-group">
+        <div class="form-label-group">
+            <div class="form-label-group-input">
+                <input type="text" class="form-control border-right-0 pr-0" id="basicInput2" placeholder="Label" aria-label="Label" aria-describedby="basic-addon2">
+                <label for="basicInput2" class="pr-0">Label</label>
+            </div>
+            <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon2">@example.com</span>
+            </div>
+        </div>
+        <small id="basicInputHelp2" class="form-text text-muted">Help text for this field.</small>
+    </div>
+</div>
