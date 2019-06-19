@@ -10,6 +10,8 @@
 
 .navbar-backdrop {
   @extend .modal-backdrop;
+  display: none;
+  opacity: 0;
   z-index: $zindex-sticky;
 }
 
@@ -17,5 +19,11 @@ body.sidebar-toggled-mobile {
   .navbar > .navbar-toggler {
     display: none;
     left: 1.25rem;
+  }
+
+  .navbar-backdrop {
+    display: block;
+    opacity: 0.5;
+    animation: fadein 0.5s;
   }
 }
