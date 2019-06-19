@@ -82,7 +82,7 @@ $border-color: $gray-300;
 //General
 $body-bg: $gray-100;
 $body-color: $gray-600;
-$headings-color: inherit;
+$headings-color: $gray-900;
 $font-size-base: 1rem !default;
 $font-weight-bold: 500;
 $font-weight-light: 300;
@@ -221,7 +221,10 @@ $custom-checkbox-indicator-indeterminate-box-shadow: none;
 $custom-select-focus-border-color: $gray-500;
 $custom-switch-width: ($custom-control-indicator-size * 2) * 1.75;
 $custom-switch-indicator-border-radius: $custom-control-indicator-size;
-$custom-switch-indicator-size: calc(#{($custom-control-indicator-size * 2)} - #{$custom-control-indicator-border-width * 4}) !default;
+$custom-switch-indicator-size: calc(
+  #{($custom-control-indicator-size * 2)} - #{$custom-control-indicator-border-width *
+    4}
+) !default;
 $fr-custom-control-indicator-switch-handle-color: $white;
 
 //Dropdown
@@ -314,23 +317,23 @@ $fr-sidebar-width-lg: 14.25em;
 $fr-sidebar-width-sm: 3.75em;
 
 // Deprecated... to be removed
-$fr-sidebar-nav-width:                                   212px;
-$fr-sidebar-nav-minimized-width:                         60px;
-$fr-sidebar-nav-background-color:                        $white;
-$fr-sidebar-nav-brand-color:                             $white;
-$fr-sidebar-nav-link-color:                              $gray-700;
-$fr-sidebar-nav-link-border-color:                       transparent;
-$fr-sidebar-nav-link-hover-color:                        $dark;
-$fr-sidebar-nav-link-hover-background-color:             lighten($primary, 44%);
-$fr-sidebar-nav-link-active-color:                       $fr-sidebar-nav-link-hover-color;
-$fr-sidebar-nav-link-active-border-color:                $primary;
-$fr-sidebar-nav-link-active-background-color:            $fr-sidebar-nav-link-hover-background-color;
-$fr-sidebar-nav-shadow:                                  1px 0px 9px rgba(0,0,0,0.13);
+$fr-sidebar-nav-width: 212px;
+$fr-sidebar-nav-minimized-width: 60px;
+$fr-sidebar-nav-background-color: $white;
+$fr-sidebar-nav-brand-color: $white;
+$fr-sidebar-nav-link-color: $gray-700;
+$fr-sidebar-nav-link-border-color: transparent;
+$fr-sidebar-nav-link-hover-color: $dark;
+$fr-sidebar-nav-link-hover-background-color: lighten($primary, 44%);
+$fr-sidebar-nav-link-active-color: $fr-sidebar-nav-link-hover-color;
+$fr-sidebar-nav-link-active-border-color: $primary;
+$fr-sidebar-nav-link-active-background-color: $fr-sidebar-nav-link-hover-background-color;
+$fr-sidebar-nav-shadow: 1px 0px 9px rgba(0, 0, 0, 0.13);
 
 // Navbar Sidebar
 $fr-navbar-sidebar-fontsize: 0.875rem;
 $fr-navbar-sidebar-icon-fontsize: 1.125rem;
-$fr-navbar-sidebar-nav-link-padding: 0.938rem 1.25rem;
+$fr-navbar-sidebar-nav-link-padding: 0.938rem 1rem;
 
 // Dark Theme
 $fr-navbar-sidebar-dark-nav-link-color: rgba($white, 0.43);

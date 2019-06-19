@@ -58,22 +58,7 @@
 
   &.show {
     animation-duration: 0.25s;
-    animation-name: fadein;
-    top: 75%;
-    opacity: 1;
-  }
-}
-
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  1% {
-    display: block;
-    top: 50%;
-    opacity: 0;
-  }
-  100% {
+    animation-name: dropfadein;
     top: 75%;
     opacity: 1;
   }

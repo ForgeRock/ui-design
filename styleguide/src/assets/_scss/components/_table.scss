@@ -4,4 +4,9 @@
     border-bottom: $fr-table-head-border solid $table-border-color;
     font-weight: $fr-table-head-weight;
   }
+  &.table-hover {
+    tbody tr {
+      cursor: pointer;
+    }
+  }
 }
