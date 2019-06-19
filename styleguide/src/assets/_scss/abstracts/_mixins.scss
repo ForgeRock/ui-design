@@ -18,10 +18,12 @@
 // $state = opened, closed
 @mixin sidebar-toggle($state) {
   $display: block;
+  $visibility: visible;
   $width: $fr-sidebar-width-lg;
 
   @if $state == 'closed' {
     $display: none;
+    $visibility: hidden;
     $width: $fr-sidebar-width-sm;
   }
 
@@ -29,16 +31,16 @@
 
   > .dropdown > .media > .dropdown-toggle,
   .nav-item.dropdown > .dropdown-menu {
-    display: $display;
+    visibility: $visibility;
   }
 
-  > .navbar-sidebar > .navbar-nav > .nav-item > .nav-link {
+  .navbar-sidebar > .navbar-nav > .nav-item > .nav-link {
     > span {
-      display: $display;
+      visibility: $visibility;
     }
 
     &::after {
-      display: $display;
+      visibility: $visibility;
     }
   }
 }
