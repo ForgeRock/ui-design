@@ -112,10 +112,8 @@ pattern_favicon: /src/assets/images/favicon.ico
 pattern_styles:                 ## add style locations here
   - /src/assets/css/style.css
   - https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined
-  - https://fonts.googleapis.com/css?family=Roboto:400,500,700
+  - https://fonts.googleapis.com/css?family=Roboto:300,400,500,700
 pattern_scripts:                ## add script locations here
-  - /src/assets/js/libs/jquery-2.1.4.min.js
-  - /src/assets/js/libs/popper.min.js
 
 
 ## Generates Pattern Styles
