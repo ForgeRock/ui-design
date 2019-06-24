@@ -1,16 +1,1 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  @extend %headings !optional;
-}
-
-h5 {
-  > small {
-    display: block;
-    font-size: 14px;
-    margin-top: 5px;
-  }
-}
+../../../../../src/scss/components/_typography.scss

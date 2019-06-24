@@ -1,0 +1,19 @@
+html {
+  line-height: 1.5;
+}
+
+body {
+  line-height: 1.5;
+  margin: 0 0 0 14.25rem;
+  transition: margin 0.2s ease;
+}
+
+@include media-breakpoint-down(sm) {
+  body {
+    margin: 0 !important;
+  }
+}
+
+body.sidebar-toggled-closed {
+  margin: 0 0 0 $fr-sidebar-width-sm;
+}

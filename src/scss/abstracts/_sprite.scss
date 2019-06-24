@@ -1,0 +1,34 @@
+%svg-common {
+	background: url("static/img/test-f0625db5.svg") no-repeat;
+}
+
+.svg-src--svg--native {
+	@extend %svg-common;
+	background-position: 100% 0;
+}
+
+.svg-src--svg--native-dims {
+	width: 46px;
+	height: 54px;
+}
+
+.svg-src--svg--service {
+	@extend %svg-common;
+	background-position: 0 0;
+}
+
+.svg-src--svg--service-dims {
+	width: 102px;
+	height: 108px;
+}
+
+.svg-src--svg--web {
+	@extend %svg-common;
+	background-position: 98.07692307692308% 100%;
+}
+
+.svg-src--svg--web-dims {
+	width: 44px;
+	height: 54px;
+}
+
