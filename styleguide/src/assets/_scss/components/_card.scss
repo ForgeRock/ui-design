@@ -1,1 +1,19 @@
-../../../../../src/scss/components/_card.scss
+.card {
+  box-shadow: $fr-card-box-shadow;
+  border: $fr-card-border;
+
+  > .table {
+    margin-bottom: 0;
+  }
+}
+
+.card.card-hover {
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: background-color 0.3s, border 0.3s;
+
+  &:hover {
+    border: 2px solid $blue;
+    background-color: $gray-100;
+  }
+}

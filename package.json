@@ -5,7 +5,7 @@
   "main": "./styleguide/_site/src/assets/css/style.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sprite": "svg-sprite -cD ./src/scss/ --cscss --css-dest abstracts --css-render-scss-dest _sprite.scss ./src/svg/*.svg"
+    "sprite": "svg-sprite -cD ./src/scss/ --cscss --css-dest abstracts --css-render-scss-dest _sprite.scss --css-sprite img/sprite.svg --css-render-scss-template ./src/svg/tpl/sprite.scss ./src/svg/*.svg"
   },
   "repository": {
     "type": "git",

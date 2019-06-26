@@ -1,1 +1,4 @@
-../../../../../src/scss/components/_button-group.scss
+.btn-toolbar {
+  border-bottom: $fr-table-head-border solid $table-border-color;
+  padding: 12px;
+}

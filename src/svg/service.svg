@@ -5,12 +5,36 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    style="fill:none"
    id="svg24"
    version="1.1"
-   viewBox="0 0 102 108"
-   height="108"
-   width="102">
+   viewBox="0 0 51 54"
+   height="54"
+   width="51"
+   sodipodi:docname="service.svg"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1405"
+     inkscape:window-height="678"
+     id="namedview17"
+     showgrid="false"
+     inkscape:zoom="1.551195"
+     inkscape:cx="55.981982"
+     inkscape:cy="91.935736"
+     inkscape:window-x="98"
+     inkscape:window-y="327"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg24" />
   <metadata
      id="metadata28">
     <rdf:RDF>
@@ -24,16 +48,18 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="matrix(0.99703938,0,0,1,-1.8227076,0)"
+     transform="matrix(0.49851969,0,0,0.5,-0.91135378,0)"
      id="g837">
     <path
        style="clip-rule:evenodd;fill:url(#paint0_linear);fill-rule:evenodd"
        d="M 25.7422,99.7166 C 33.6287,104.964 42.9681,108 52.9791,108 c 28.2503,0 51.1519,-24.1765 51.1519,-53.9998 0,-10.5685 -2.876,-20.4279 -7.8469,-28.7536 L 81.1805,41.1912 C 82.7838,45.12 83.672,49.4505 83.672,54 c 0,17.894 -13.7408,32.3999 -30.6909,32.3999 -4.3095,0 -8.4116,-0.9377 -12.1331,-2.6303 z"
-       id="path2" />
+       id="path2"
+       inkscape:connector-curvature="0" />
     <path
        style="clip-rule:evenodd;fill:url(#paint1_linear);fill-rule:evenodd"
        d="M 82.1413,9.62913 C 73.8689,3.5585 63.8179,0 52.9797,0 24.7295,0 1.82812,24.1766 1.82812,53.9999 c 0,11.4418 3.3708,22.0524 9.12118,30.7855 L 25.8161,69.0908 c -2.2511,-4.5069 -3.5254,-9.6419 -3.5254,-15.0911 0,-17.894 13.7408,-32.4 30.691,-32.4 5.1617,0 10.0259,1.3453 14.295,3.7218 z"
-       id="path4" />
+       id="path4"
+       inkscape:connector-curvature="0" />
   </g>
   <defs
      id="defs22">
