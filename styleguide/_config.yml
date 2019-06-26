@@ -110,9 +110,9 @@ pattern_description: DESCRIPTION        ## used in <head> tag
 pattern_language: en                    ## used in <html> tag
 pattern_favicon: /src/assets/images/favicon.ico
 pattern_styles:                 ## add style locations here
-  - /src/assets/css/style.css
   - https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined
   - https://fonts.googleapis.com/css?family=Roboto:300,400,500,700
+  - /src/assets/css/style.css
 pattern_scripts:                ## add script locations here
 
 

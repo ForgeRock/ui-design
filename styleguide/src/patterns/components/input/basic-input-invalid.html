@@ -1,0 +1,24 @@
+---
+title: Basic Input Invalid
+styles: base/input.scss
+info: Invalid state should highlight input and place error message directly below the input but above any help text.
+maturity: draft
+---
+
+<div class="p-1 was-validated">
+  <div class="form-group">
+    <div class="form-label-group mb-0">
+      <input
+        type="text"
+        id="basicInput"
+        class="form-control is-invalid"
+        autofocus="autofocus"
+        placeholder="label"
+        required
+      />
+      <label for="basicInput">Label</label>
+    </div>
+    <div class="invalid-feedback d-block">Please provide a value.</div>
+    <small id="basicInputHelp" class="form-text text-muted">Help text for this field.</small>
+  </div>
+</div>

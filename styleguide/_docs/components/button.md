@@ -41,3 +41,5 @@ Outline and Link buttons are used most frequently and can be used multiple times
 {% include pattern_block.html url='/src/patterns/components/button/icon_button.html' %}
 
 {% include pattern_block.html url='/src/patterns/components/button/icon_only_button.html' %}
+
+{% include pattern_block.html url='/src/patterns/components/button/loading_button.html' %}
