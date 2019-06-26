@@ -4,7 +4,8 @@
   "description": "ForgeRock Styles and Styleguide",
   "main": "./styleguide/_site/src/assets/css/style.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sprite": "svg-sprite -cD ./src/scss/ --cscss --css-dest abstracts --css-render-scss-dest _sprite.scss --css-sprite img/sprite.svg --css-render-scss-template ./src/svg/tpl/sprite.scss ./src/svg/*.svg"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,8 @@
   "homepage": "https://github.com/ForgeRock/ui-design#readme",
   "dependencies": {
     "typed-css-modules": "^0.4.2"
+  },
+  "devDependencies": {
+    "svg-sprite": "^1.5.0"
   }
 }

@@ -8,6 +8,13 @@
   }
 }
 
+.navbar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
+}
+
 .navbar-backdrop {
   @extend .modal-backdrop;
   display: none;

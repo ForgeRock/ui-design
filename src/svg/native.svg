@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   style="fill:none"
+   width="46"
+   height="54"
+   viewBox="0 0 46 54"
+   version="1.1"
+   id="svg35"
+   sodipodi:docname="native.svg"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2039"
+     inkscape:window-height="1363"
+     id="namedview23"
+     showgrid="false"
+     inkscape:zoom="10.23452"
+     inkscape:cx="-9.9133207"
+     inkscape:cy="37.020864"
+     inkscape:window-x="20"
+     inkscape:window-y="47"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg35" />
+  <metadata
+     id="metadata39">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     style="fill:url(#linearGradient2465);stroke-width:0.99746513;fill-opacity:1;fill-rule:evenodd"
+     d="M 0,32.5813 11.475997,0 H 25.628971 L 14.152078,32.5813 Z"
+     id="path2" />
+  <path
+     style="fill:url(#paint1_linear);stroke-width:0.99746513"
+     d="M 10.18258,43.2902 21.660965,10.7098 H 35.81563 L 24.337145,43.2902 Z"
+     id="path4" />
+  <path
+     style="fill:url(#paint2_linear);stroke-width:0.99746513"
+     d="M 20.37093,54 31.847822,21.4196 H 46 L 34.524003,54 Z"
+     id="path6" />
+  <defs
+     id="defs33">
+    <linearGradient
+       id="paint0_linear"
+       x1="20.656601"
+       y1="5.6037502"
+       x2="38.009399"
+       y2="68.767998"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#29D3DA"
+         id="stop8" />
+      <stop
+         offset="0.519"
+         stop-color="#0077FF"
+         id="stop10" />
+      <stop
+         offset="0.999"
+         stop-color="#064093"
+         id="stop12" />
+      <stop
+         offset="1"
+         stop-color="#084698"
+         id="stop14" />
+    </linearGradient>
+    <linearGradient
+       gradientTransform="matrix(0.99493664,0,0,1,-11.156125,-3)"
+       id="paint1_linear"
+       x1="28.521299"
+       y1="6.11166"
+       x2="42.3288"
+       y2="58.007099"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0.012"
+         stop-color="#E0B386"
+         id="stop17" />
+      <stop
+         offset="0.519"
+         stop-color="#DA498C"
+         id="stop19" />
+      <stop
+         offset="1"
+         stop-color="#961484"
+         id="stop21" />
+    </linearGradient>
+    <linearGradient
+       gradientTransform="matrix(0.99493664,0,0,1,-11.156125,-3)"
+       id="paint2_linear"
+       x1="62.459301"
+       y1="63.1726"
+       x2="41.190498"
+       y2="38.775902"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#29D3DA"
+         id="stop24" />
+      <stop
+         offset="0.519"
+         stop-color="#0077FF"
+         id="stop26" />
+      <stop
+         offset="0.999"
+         stop-color="#064093"
+         id="stop28" />
+      <stop
+         offset="1"
+         stop-color="#084698"
+         id="stop30" />
+    </linearGradient>
+    <linearGradient
+       gradientTransform="matrix(0.99493664,0,0,1,-11.156125,-3)"
+       y2="68.767998"
+       x2="38.009399"
+       y1="5.6037502"
+       x1="20.656601"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient2465"
+       xlink:href="#paint0_linear" />
+  </defs>
+</svg>
