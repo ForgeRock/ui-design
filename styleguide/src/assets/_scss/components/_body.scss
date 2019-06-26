@@ -17,3 +17,8 @@ body {
 body.sidebar-toggled-closed {
   margin: 0 0 0 $fr-sidebar-width-sm;
 }
+body .material-icons {
+  font-size: 1.125rem;
+  line-height: 1.244rem;
+  vertical-align: middle;
+}
