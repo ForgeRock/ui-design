@@ -7,6 +7,8 @@ info: Text inputs are used for freeform data entry.
 
 {% include pattern_block.html url='/src/patterns/components/input/basic-input-disabled.html' %}
 
+{% include pattern_block.html url='/src/patterns/components/input/basic-input-readonly.html' %}
+
 {% include pattern_block.html url='/src/patterns/components/input/basic-input-invalid.html' %}
 
 {% include pattern_block.html url='/src/patterns/components/input/textarea.html' %}
