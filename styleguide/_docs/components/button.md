@@ -26,8 +26,6 @@ The Primary button generally should only be used once per component screen at an
 
 Not all features need to have primary actions, sometimes the actions are secondary to the content and are all of equal importance.
 
-Outline and Link buttons are used most frequently and can be used multiple times per feature. Use these buttons when the actions are of equal or secondary importance to the content surrounding it.
-
 {% include pattern_block.html url='/src/patterns/components/button/block_button.html' %}
 
 {% include pattern_block.html url='/src/patterns/components/button/inverse_button.html' %}
