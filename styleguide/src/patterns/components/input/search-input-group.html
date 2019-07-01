@@ -1,26 +1,29 @@
 ---
 title: Search Input
 styles: base/input.scss
-info: Search inputs don‘t use floating labels, and provide an option to clear input.
+info: Search input groups don‘t use floating labels, and like password inputs have their addon absolutely positioned to allow selection on entire component.
 maturity: draft
 ---
 <div class="p-1">
     <div class="form-group">
-        <div class="input-group">
+        <div class="input-group input-group-search">
             <div class="input-group-prepend">
-                <span class="input-group-text" id="search-addon1"><i class="material-icons material-icons-outlined">search</i></span>
+              <span class="input-group-text" id="search-addon1"><i class="material-icons material-icons-outlined">search</i></span>
             </div>
-            <input type="text" class="form-control border-left-0 pl-0" id="searchInput1" placeholder="Search" aria-label="Label" aria-describedby="basic-addon1">
+            <input type="text" class="form-control" id="searchInput1" placeholder="Search" aria-label="Label" aria-describedby="basic-addon1">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary d-none" type="button"><i class="material-icons material-icons-outlined">close</i></button>
+            </div>
         </div>
     </div>
     <div class="form-group">
-        <div class="input-group">
+        <div class="input-group input-group-search">
             <div class="input-group-prepend">
-                <span class="input-group-text" id="search-addon2"><i class="material-icons material-icons-outlined">search</i></span>
+              <span class="input-group-text" id="search-addon3"><i class="material-icons material-icons-outlined">search</i></span>
             </div>
-            <input type="text" class="form-control border-left-0 px-0" id="searchInput1" placeholder="Search" aria-label="Label" aria-describedby="basic-addon2" value="Kittens">
+            <input type="text" class="form-control" id="searchInput1" placeholder="Search" aria-label="Label" aria-describedby="basic-addon3" value="bjensen">
             <div class="input-group-append">
-                <button class="btn btn-outline-secondary border-left-0" type="button"><i class="material-icons material-icons-outlined">close</i></button>
+                <button class="btn btn-outline-secondary" type="button"><i class="material-icons material-icons-outlined">close</i></button>
             </div>
         </div>
     </div>

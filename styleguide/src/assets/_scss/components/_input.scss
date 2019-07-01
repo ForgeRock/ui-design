@@ -1,26 +1,63 @@
-.input-group .input-group-append,
-.input-group .input-group-prepend {
-  > .btn {
-    background-color: $input-bg;
-    border-color: $input-border-color;
-    color: $input-btn-color;
+.input-group {
+  .input-group-append,
+  .input-group-prepend {
+    > .btn {
+      background-color: $input-bg;
+      border-color: $input-border-color;
+      color: $input-btn-color;
+    }
+    > .btn:hover,
+    > .btn:focus {
+      color: $input-btn-active-color;
+      background-color: $gray-100;
+    }
   }
-  > .btn:hover,
-  > .btn:focus {
-    color: $input-btn-active-color;
-    background-color: $gray-100;
+  .input-group-append {
+    > .btn {
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+    }
   }
-}
-.input-group .input-group-append {
-  > .btn {
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
+  .input-group-prepend {
+    > .btn {
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+    }
   }
-}
-.input-group .input-group-prepend {
-  > .btn {
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
+  // Search input
+  &.input-group-search {
+    .input-group-append,
+    .input-group-prepend {
+      position: absolute;
+      height: $input-height;
+      z-index: 6;
+
+      .btn {
+        border-color: transparent;
+        background-color: transparent;
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: transparent;
+          color: $gray-900;
+        }
+      }
+      .input-group-text {
+        background-color: transparent;
+        border: none;
+      }
+    }
+    .input-group-append {
+      right: 0;
+    }
+    .form-control {
+      border-top-left-radius: $border-radius;
+      border-bottom-left-radius: $border-radius;
+      border-top-right-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
+      padding-left: 3.75rem;
+      padding-right: 3.75rem;
+    }
   }
 }
 
@@ -28,9 +65,12 @@
   flex: 1;
 }
 
+
+
 .form-label-group {
   position: relative;
   display: flex;
+
   > .form-label-group-input {
     position: relative;
     flex: 1 1 auto;
@@ -101,7 +141,42 @@
       }
     }
   }
-  
+
+  // Password input
+  &.form-label-group-password {
+    .input-group-append,
+    .input-group-prepend {
+      position: absolute;
+      height: $input-height;
+      z-index: 6;
+
+      .btn {
+        border-color: transparent;
+        background-color: transparent;
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: transparent;
+          color: $gray-900;
+        }
+      }
+      .input-group-text {
+        background-color: transparent;
+        border: none;
+      }
+    }
+    .input-group-append {
+      right: 0;
+    }
+    >.form-label-group-input:not(:last-child)  {
+      .form-control {
+        border-top-right-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+        padding-right: 3.75rem;
+      }
+    }
+  }
+
 }
 
 //-->

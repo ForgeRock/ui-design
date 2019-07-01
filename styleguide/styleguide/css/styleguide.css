@@ -450,9 +450,9 @@ hr {
 code,
 pre {
   font-family: Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;
-  color: #ffffff;
+  color: #F7685B;
   font-size: 0.875rem;
-  background: #0a0a0a;
+  background: transparent;
   white-space: pre-wrap;
   word-wrap: break-word; }
 
@@ -465,7 +465,7 @@ figure {
 
 .highlighter-rouge {
   padding: .1rem .2rem;
-  background: rgba(10, 10, 10, 0.1);
+  background: rgba(0, 0, 0, 0);
   color: #0a0a0a; }
 
 .highlight {
@@ -849,7 +849,7 @@ input.fluid {
         padding-left: 0; } }
 
 .sg_sidebar {
-  color: #fff;
+  color: #5E6D82;
   background: #fff;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch; }
@@ -909,7 +909,10 @@ input.fluid {
       font-weight: 700;
       padding: 1rem;
       padding-bottom: 0.5rem;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: .75rem; }
     .sg_sidebar .group li {
       border-top: none; }
       .sg_sidebar .group li a {
@@ -1105,7 +1108,7 @@ body#sg {
     .sg-pusher.show_sidebar .sg-main {
       position: absolute;
       left: 232px;
-      opacity: .2; } }
+      opacity: 0.2; } }
 @media only screen and (max-width: 480px) {
   .sg-pusher.show_sidebar {
     width: 100%;
@@ -1119,7 +1122,7 @@ body#sg {
     .sg-pusher.show_sidebar .sg-main {
       position: absolute;
       left: 182px;
-      opacity: .2; } }
+      opacity: 0.2; } }
 .sg_sidebar {
   position: fixed;
   top: 0;
@@ -1143,9 +1146,8 @@ body#sg {
   min-height: 100%; }
 
 .sg_contain {
-  max-width: 50rem;
-  margin: 0 auto;
-  padding: 0 212px 0 232px; }
+  max-width: 65rem;
+  margin: 0 auto; }
   @media only screen and (max-width: 1400px) {
     .sg_contain {
       max-width: 52rem;
