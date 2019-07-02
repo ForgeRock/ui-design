@@ -779,6 +779,9 @@ input {
 input.fluid {
   width: calc(100% - 1rem); }
 
+body {
+  margin: 0; }
+
 .sg_masthead {
   padding: 4.5rem 0;
   margin-bottom: 4.5rem;
