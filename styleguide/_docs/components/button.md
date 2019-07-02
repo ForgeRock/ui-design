@@ -41,3 +41,5 @@ Not all features need to have primary actions, sometimes the actions are seconda
 {% include pattern_block.html url='/src/patterns/components/button/icon_only_button.html' %}
 
 {% include pattern_block.html url='/src/patterns/components/button/loading_button.html' %}
+
+{% include pattern_block.html url='/src/patterns/components/button/checkbox_button.html' %}
