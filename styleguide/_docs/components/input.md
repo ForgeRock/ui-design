@@ -25,4 +25,6 @@ info: Text inputs are used for freeform data entry.
 
 {% include pattern_block.html url='/src/patterns/components/input/password-input-group.html' %}
 
+{% include pattern_block.html url='/src/patterns/components/input/set-password-input.html' %}
+
 {% include pattern_block.html url='/src/patterns/components/input/search-input-group.html' %}
