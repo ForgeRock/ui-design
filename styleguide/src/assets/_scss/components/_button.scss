@@ -5,12 +5,11 @@
     padding-left: 3rem;
     border-color: $input-border-color;
 
-
-
     &:hover,
     &:focus {
       border-color: $input-focus-border-color;
-      background-color: lighten($primary, 25%);
+      background-color: lighten($primary, 45%);
+      color: $input-color;
     }
 
     &:before {
@@ -51,6 +50,10 @@
       }
       &:after {
         background-image: $custom-checkbox-indicator-icon-checked;
+      }
+      &:hover,
+      &:focus {
+        background-color: lighten($primary, 40%);
       }
     }
   }
