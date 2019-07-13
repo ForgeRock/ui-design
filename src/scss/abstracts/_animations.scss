@@ -1,3 +1,12 @@
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 250ms;
+}
+
 @keyframes dropfadein {
   0% {
     opacity: 0;
@@ -26,11 +35,42 @@
   }
 }
 
-.fade-enter {
-  opacity: 0;
+@keyframes fadeout {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-.fade-enter-active {
+@keyframes animate-fixed-bottom-left {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-fixed-bottom-left {
+  animation: animate-fixed-bottom-left 0.5s;
+}
+
+.alert-transition-enter {
+  transform: translateX(-100%);
+}
+.alert-transition-enter-active {
+  transform: translateX(0);
+  transition: transform 500ms;
+}
+.alert-transition-exit-active {
   opacity: 1;
-  transition: opacity 250ms;
+}
+.alert-transition-exit {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+.alert-transition-exit-done {
+  display: none;
 }

@@ -212,8 +212,6 @@ $close-font-weight: $font-weight-light;
 $close-color: $black;
 $close-text-shadow: none;
 
-
-
 //Dropdown
 $dropdown-border-color: $gray-300;
 $dropdown-link-active-color: $gray-900;
@@ -339,3 +337,6 @@ $fr-signup-header-wrapper-height: 5.25rem;
 // Switches
 $fr-switch-bg: $gray-400;
 $fr-switch-toggled-bg: $primary;
+
+// Position
+$fr-fixed-position-offset: 1.25;

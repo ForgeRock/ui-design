@@ -36,6 +36,9 @@
 
 .dropdown-toggle {
   cursor: pointer;
+  padding-right: 2.5rem;
+  position: relative;
+
   &::after {
     @extend %dropdown-toggle-icon-more;
     margin: 0;
@@ -52,14 +55,14 @@
 }
 
 .dropdown-menu {
-  opacity: 0;
-  left: 20px;
-  top: 50%;
+  // opacity: 0;
+  // left: 20px;
+  // top: 50%;
 
   &.show {
-    animation-duration: 0.25s;
-    animation-name: dropfadein;
-    top: 75%;
-    opacity: 1;
+    // animation-duration: 0.25s;
+    // animation-name: dropfadein;
+    // top: 75%;
+    // opacity: 1;
   }
 }
