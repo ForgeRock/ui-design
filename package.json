@@ -1,6 +1,6 @@
 {
   "name": "@forgerock/ui-design",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "ForgeRock Styles and Styleguide",
   "main": "./styleguide/_site/src/assets/css/style.css",
   "scripts": {
