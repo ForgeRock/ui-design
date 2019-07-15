@@ -4,14 +4,14 @@ html {
 
 body {
   line-height: 1.5;
-  transition: margin 0.2s ease;
-  > .app-sidebar {
+  > .app-admin {
     margin: 0 0 0 14.25rem;
+    transition: margin 0.2s ease;
   }
 }
 
 @include media-breakpoint-down(sm) {
-  body {
+  body > .app-admin {
     margin: 0 !important;
   }
 }

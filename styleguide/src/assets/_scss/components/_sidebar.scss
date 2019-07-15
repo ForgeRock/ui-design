@@ -2,11 +2,11 @@
   background-color: $gray-800;
 }
 
-body.sidebar-toggled-open .sidebar {
+body.sidebar-toggled-open > .app-admin .sidebar {
   @include sidebar-toggle('open');
 }
 
-body.sidebar-toggled-closed .sidebar {
+body.sidebar-toggled-closed > .app-admin .sidebar {
   @include sidebar-toggle('closed');
   &:hover {
     @include sidebar-toggle('open');
@@ -33,11 +33,11 @@ body.sidebar-toggled-closed .sidebar {
 }
 
 @include media-breakpoint-down(sm) {
-  body .sidebar {
+  body > .app-admin .sidebar {
     @include sidebar-hidden;
   }
 
-  body.sidebar-toggled-mobile .sidebar {
+  body.sidebar-toggled-mobile > .app-admin .sidebar {
     @include sidebar-toggle('open');
     box-shadow: $fr-navbar-sidebar-dark-box-shadow;
     margin-left: 0;
