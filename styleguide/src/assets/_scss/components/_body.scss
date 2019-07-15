@@ -4,8 +4,10 @@ html {
 
 body {
   line-height: 1.5;
-  margin: 0 0 0 14.25rem;
   transition: margin 0.2s ease;
+  > .app-sidebar {
+    margin: 0 0 0 14.25rem;
+  }
 }
 
 @include media-breakpoint-down(sm) {
