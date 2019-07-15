@@ -16,7 +16,7 @@ body {
   }
 }
 
-body.sidebar-toggled-closed {
+body.sidebar-toggled-closed > .app-admin {
   margin: 0 0 0 $fr-sidebar-width-sm;
 }
 body .material-icons {
