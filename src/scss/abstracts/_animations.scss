@@ -1,10 +1,21 @@
+.fade-appear,
+.fade-appear-active,
+.fade-appear-done,
 .fade-enter {
   opacity: 0;
 }
 
 .fade-enter-active {
-  opacity: 1;
-  transition: opacity 250ms;
+  opacity: 1 !important;
+  transition: opacity 300ms;
+}
+
+.fade-enter-done {
+  opacity: 1 !important;
+}
+
+.fade-exit-done {
+  opacity: 0 !important;
 }
 
 @keyframes dropfadein {
