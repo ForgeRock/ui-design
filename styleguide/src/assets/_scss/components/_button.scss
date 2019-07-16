@@ -7,8 +7,7 @@
 
     &:hover,
     &:focus {
-      border-color: $input-focus-border-color;
-      background-color: lighten($primary, 45%);
+      background-color: $gray-100;
       color: $input-color;
     }
 

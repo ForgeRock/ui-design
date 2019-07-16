@@ -111,13 +111,18 @@ $custom-control-indicator-checked-bg: $primary;
 $custom-checkbox-indicator-border-radius: $border-radius;
 $custom-checkbox-indicator-indeterminate-box-shadow: none;
 $custom-select-focus-border-color: $gray-500;
+
 $custom-switch-width: ($custom-control-indicator-size * 2) * 1.75;
 $custom-switch-indicator-border-radius: $custom-control-indicator-size;
+$custom-control-indicator-checked-disabled-bg:  rgba($primary, .5);
 $custom-switch-indicator-size: calc(
   #{($custom-control-indicator-size * 2)} - #{$custom-control-indicator-border-width *
     4}
 ) !default;
 $fr-custom-control-indicator-switch-handle-color: $white;
+$fr-custom-control-indicator-switch-border-color: $gray-400;
+$fr-custom-control-indicator-switch-background-color: $gray-400;
+$fr-custom-control-indicator-switch-checked-disabled-border-color: $custom-control-indicator-checked-disabled-bg;
 
 // Input
 $input-padding-y: 0.75rem;
@@ -282,7 +287,7 @@ $pagination-disabled-border-color: transparent;
 $table-bg: transparent;
 $table-accent-bg: $gray-100;
 $table-hover-bg: $gray-100;
-$table-cell-padding: 1.5rem;
+$table-cell-padding: 1.25rem 1.5rem;
 $table-cell-padding-sm: 0.5rem;
 $fr-table-head-weight: 500;
 $fr-table-head-border: 1px;
