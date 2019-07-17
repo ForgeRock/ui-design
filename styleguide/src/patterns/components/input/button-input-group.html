@@ -1,7 +1,7 @@
 ---
 title: Button Input Group
 styles: base/input.scss
-info: Input group with button add-ons.
+info: Use Button Input Groups to create separation between the input and the addon. Examples include when a button label is longer than a single character, or when the input has multiple addons.
 maturity: draft
 ---
 <div class="p-1">
@@ -18,14 +18,14 @@ maturity: draft
     </div>
     <div class="form-group">
         <div class="form-label-group mb-0">
-            <div class="input-group-prepend">
-                <button class="btn btn-outline-secondary" type="button"><i class="material-icons material-icons-outlined">visibility_off</i></button>
-                <button class="btn btn-outline-secondary" type="button"><i class="material-icons material-icons-outlined">copy</i></button>
-                <button class="btn btn-outline-secondary" type="button"><i class="material-icons material-icons-outlined">sync</i></button>
-            </div>
             <div class="form-label-group-input">
                 <input type="text" id="buttonInputGroup2" class="form-control" placeholder="Label" />
                 <label for="buttonInputGroup2">Label</label>
+            </div>
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button"><i class="material-icons material-icons-outlined">visibility_off</i></button>
+                <button class="btn btn-outline-secondary" type="button"><i class="material-icons material-icons-outlined">copy</i></button>
+                <button class="btn btn-outline-secondary" type="button"><i class="material-icons material-icons-outlined">sync</i></button>
             </div>
         </div>
     </div>
