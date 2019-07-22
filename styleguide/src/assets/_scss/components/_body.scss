@@ -1,24 +1,8 @@
-html {
-  line-height: 1.5;
-}
-
+html,
 body {
   line-height: 1.5;
-  > .app-admin {
-    margin: 0 0 0 14.25rem;
-    transition: margin 0.2s ease;
-  }
 }
 
-@include media-breakpoint-down(sm) {
-  body > .app-admin {
-    margin: 0 !important;
-  }
-}
-
-body.sidebar-toggled-closed > .app-admin {
-  margin: 0 0 0 $fr-sidebar-width-sm;
-}
 body .material-icons {
   font-size: 1.125rem;
   vertical-align: middle;

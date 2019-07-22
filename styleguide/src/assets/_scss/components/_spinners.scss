@@ -1,0 +1,19 @@
+.spinner-border {
+  border: 1px solid #ccc;
+  border-top-color: #07d;
+}
+
+.spinner-absolute {
+  left: 50%;
+  margin-left: -50px;
+  position: absolute;
+  top: 20%;
+}
+
+.spinner-absolute-center {
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+  position: absolute;
+  top: 50%;
+}

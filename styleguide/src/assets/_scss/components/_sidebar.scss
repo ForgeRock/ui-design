@@ -1,12 +1,26 @@
+.sidebar-content-margin {
+  margin: 0 0 0 $fr-sidebar-width-lg;
+}
+
+body.sidebar-toggled-closed .sidebar-content-margin {
+  margin: 0 0 0 $fr-sidebar-width-sm;
+}
+
+@include media-breakpoint-down(sm) {
+  body .sidebar-content-margin {
+    margin: 0 !important;
+  }
+}
+
 .sidebar.sidebar-dark {
   background-color: $gray-800;
 }
 
-body.sidebar-toggled-open > .app-admin .sidebar {
+body.sidebar-toggled-open .sidebar-content-margin .sidebar {
   @include sidebar-toggle('open');
 }
 
-body.sidebar-toggled-closed > .app-admin .sidebar {
+body.sidebar-toggled-closed .sidebar-content-margin .sidebar {
   @include sidebar-toggle('closed');
   &:hover {
     @include sidebar-toggle('open');
@@ -33,11 +47,11 @@ body.sidebar-toggled-closed > .app-admin .sidebar {
 }
 
 @include media-breakpoint-down(sm) {
-  body > .app-admin .sidebar {
+  body .sidebar-content-margin .sidebar {
     @include sidebar-hidden;
   }
 
-  body.sidebar-toggled-mobile > .app-admin .sidebar {
+  body.sidebar-toggled-mobile .sidebar-content-margin .sidebar {
     @include sidebar-toggle('open');
     box-shadow: $fr-navbar-sidebar-dark-box-shadow;
     margin-left: 0;

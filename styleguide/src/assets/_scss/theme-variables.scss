@@ -114,7 +114,7 @@ $custom-select-focus-border-color: $gray-500;
 
 $custom-switch-width: ($custom-control-indicator-size * 2) * 1.75;
 $custom-switch-indicator-border-radius: $custom-control-indicator-size;
-$custom-control-indicator-checked-disabled-bg:  rgba($primary, .5);
+$custom-control-indicator-checked-disabled-bg: rgba($primary, 0.5);
 $custom-switch-indicator-size: calc(
   #{($custom-control-indicator-size * 2)} - #{$custom-control-indicator-border-width *
     4}
@@ -304,7 +304,7 @@ $fr-toolbar-dropdown-color: rgba(0, 0, 0, 0.5);
 // Custom ForgeRock UI Components
 
 // Sidebar
-$fr-sidebar-width-lg: 14.25em;
+$fr-sidebar-width-lg: 15em;
 $fr-sidebar-width-sm: 3.75em;
 
 // Deprecated... to be removed
@@ -345,3 +345,8 @@ $fr-switch-toggled-bg: $primary;
 
 // Position
 $fr-fixed-position-offset: 1.25;
+
+// Spinner
+$spinner-height: 100px;
+$spinner-width: 100px;
+$spinner-border-width: 1px;
