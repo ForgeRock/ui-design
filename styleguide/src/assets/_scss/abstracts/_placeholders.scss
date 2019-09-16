@@ -1,1 +1,7 @@
-../../../../../src/scss/abstracts/_placeholders.scss
+%dropdown-toggle-icon-more {
+  @include material-icon('expand_more');
+}
+
+%dropdown-toggle-icon-less {
+  @include material-icon('expand_less');
+}
