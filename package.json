@@ -2,7 +2,9 @@
   "name": "@forgerock/ui-design",
   "version": "0.0.9",
   "description": "ForgeRock Styles and Styleguide",
-  "files": ["styleguide/src/assets"],
+  "files": [
+    "styleguide/src/assets"
+  ],
   "main": "./styleguide/_site/src/assets/css/style.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
