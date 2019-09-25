@@ -1,8 +1,12 @@
 {
   "name": "@forgerock/ui-design",
-  "version": "0.0.10",
+  "version": "0.0.13",
   "description": "ForgeRock Styles and Styleguide",
-  "files": ["styleguide/src/assets"],
+  "files": [
+    "styleguide/src/assets",
+    "styleguide/_site/src/assets/css",
+    "src/scss/abstracts/img"
+  ],
   "main": "./styleguide/_site/src/assets/css/style.css",
   "scripts": {
     "sprite": "svg-sprite -cD ./src/scss/ --cscss --css-dest abstracts --css-render-scss-dest _sprite.scss --css-sprite img/sprite.svg --css-render-scss-template ./src/svg/tpl/sprite.scss ./src/svg/*.svg",
