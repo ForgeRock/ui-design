@@ -1,6 +1,6 @@
 {
   "name": "@forgerock/ui-design",
-  "version": "0.0.13",
+  "version": "0.1.0",
   "description": "ForgeRock Styles and Styleguide",
   "files": [
     "styleguide/src/assets",
@@ -9,8 +9,9 @@
   ],
   "main": "./styleguide/_site/src/assets/css/style.css",
   "scripts": {
-    "sprite": "svg-sprite -cD ./src/scss/ --cscss --css-dest abstracts --css-render-scss-dest _sprite.scss --css-sprite img/sprite.svg --css-render-scss-template ./src/svg/tpl/sprite.scss ./src/svg/*.svg",
-    "serve": "cd styleguide && jekyll serve"
+    "build": "npm run clean && npm run sprite && node build/build.js",
+    "clean": "rimraf dist/*",
+    "sprite": "svg-sprite -cD ./src/scss/ --cscss --css-dest abstracts --css-render-scss-dest _sprite.scss --css-sprite img/sprite.svg --css-render-scss-template ./src/svg/tpl/sprite.scss ./src/svg/*.svg"
   },
   "repository": {
     "type": "git",
@@ -23,7 +24,11 @@
   },
   "homepage": "https://github.com/ForgeRock/ui-design#readme",
   "dependencies": {
-    "typed-css-modules": "^0.4.2"
+    "bootstrap": "^4.3.1",
+    "node-sass": "^4.12.0",
+    "rimraf": "^3.0.0",
+    "sass": "^1.22.12",
+    "typed-css-modules": "^0.6.2"
   },
   "devDependencies": {
     "svg-sprite": "^1.5.0"
