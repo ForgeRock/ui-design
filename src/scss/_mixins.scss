@@ -1,0 +1,53 @@
+@import 'node_modules/bootstrap/scss/mixins';
+
+@mixin material-icon($content) {
+  border: none;
+  content: $content;
+  font-family: 'Material Icons Outlined';
+}
+
+@mixin headings {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @content;
+  }
+}
+
+// $state = opened, closed
+@mixin sidebar-toggle($state) {
+  $display: block;
+  $visibility: visible;
+  $width: $fr-sidebar-width-lg;
+
+  @if $state == 'closed' {
+    $display: none;
+    $visibility: hidden;
+    $width: $fr-sidebar-width-sm;
+  }
+
+  width: $width;
+
+  > .dropdown > .media > .dropdown-toggle,
+  .nav-item.dropdown > .dropdown-menu {
+    visibility: $visibility;
+  }
+
+  .navbar-sidebar > .navbar-nav > .nav-item > .nav-link {
+    > span {
+      visibility: $visibility;
+    }
+
+    &::after {
+      visibility: $visibility;
+    }
+  }
+}
+
+@mixin sidebar-hidden {
+  box-shadow: none;
+  margin-left: -$fr-sidebar-width-lg;
+}

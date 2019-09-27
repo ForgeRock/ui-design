@@ -1,0 +1,16 @@
+@import 'node_modules/bootstrap/scss/tables';
+
+.table {
+  thead th {
+    border-top: none;
+    border-bottom: $fr-table-head-border solid $table-border-color;
+    // padding-top: $table-head-cell-padding;
+    // padding-bottom: $table-head-cell-padding;
+    font-weight: $fr-table-head-weight;
+  }
+  &.table-hover {
+    tbody tr {
+      cursor: pointer;
+    }
+  }
+}

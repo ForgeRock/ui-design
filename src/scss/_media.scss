@@ -1,0 +1,15 @@
+@import 'node_modules/bootstrap/scss/media';
+
+.sidebar .media {
+  > img {
+    height: 2.25rem;
+    width: 2.25rem;
+  }
+
+  > .media-body {
+    > %headings {
+      color: inherit;
+      margin-bottom: 0;
+    }
+  }
+}

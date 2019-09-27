@@ -1,0 +1,70 @@
+@import 'node_modules/bootstrap/scss/dropdown';
+
+.dropdown.dropdown-dark {
+  > .media .media-body {
+    color: $light;
+  }
+}
+
+.dropdown.dropdown-dark {
+  > .media {
+    padding: 1em 1em 1em 0.75rem;
+  }
+  .media-body {
+    font-size: 0.875rem;
+    white-space: nowrap;
+  }
+}
+
+.dropdown.dropdown-media {
+  > .dropdown-menu {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+
+    > .dropdown-item.dropdown-item-icontext {
+      font-size: 0.875rem;
+      > .material-icons {
+        font-size: $fr-navbar-sidebar-icon-fontsize;
+        line-height: 23px;
+      }
+    }
+
+    > .dropdown-item {
+      &:visited {
+        color: inherit;
+      }
+    }
+  }
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+  padding-right: 2.5rem;
+  position: relative;
+
+  &::after {
+    @extend %dropdown-toggle-icon-more;
+    margin: 0;
+    position: absolute;
+    right: 1.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &[aria-expanded='true'] {
+    &::after {
+      @extend %dropdown-toggle-icon-less;
+    }
+  }
+}
+
+.dropdown-menu {
+  // opacity: 0;
+  // left: 20px;
+  // top: 50%;
+
+  &.show {
+    // animation-duration: 0.25s;
+    // animation-name: dropfadein;
+    // top: 75%;
+    // opacity: 1;
+  }
+}

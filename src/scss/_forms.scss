@@ -1,0 +1,13 @@
+@import 'node_modules/bootstrap/scss/forms';
+
+.form-control {
+  &-inline {
+    display: inline-block;
+    width: 5rem;
+  }
+}
+
+legend {
+  color: $gray-700;
+  font-weight: $font-weight-bold;
+}
