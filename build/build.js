@@ -13,8 +13,9 @@ const defaultImports = [
   'utilities/utilities',
 ];
 
-const build = () => {
+const build = args => {
   const importFiles = getSassImports(args);
+  const filename = args.length > 0 ? args.join('-') : 'forgerock';
   const result = sass.renderSync({
     data: importFiles,
     includePaths: [scssPath],
@@ -22,7 +23,6 @@ const build = () => {
     outFile: `dist/${filename}.css`,
     sourceMap: `dist/${filename}.css.map`,
   });
-  const filename = args.length > 0 ? args.join('-') : 'forgerock';
   fs.writeFileSync(`dist/${filename}.css`, result.css, err => {
     if (err) {
       console.error('CSS build error: ', err);
@@ -63,4 +63,4 @@ const formatImports = items => {
   return items.map(item => `@import '${item}';`);
 };
 
-build();
+build(args);

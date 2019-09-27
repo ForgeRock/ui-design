@@ -1,0 +1,9 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "max-nesting-depth": 3,
+    "number-leading-zero": true
+  }
+}
+
+# vi:syntax=json
