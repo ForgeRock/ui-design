@@ -10,7 +10,7 @@
     "build": "npm-run-all clean build:sprite build:sass build:types",
     "build:dev": "npm-run-all --parallel watch:sass watch:sprite watch:types",
     "build:sass": "build/build.js",
-    "build:sprite": "svg-sprite -cD ./src/scss/ --cscss --css-dest ../scss/ --css-render-scss-dest _sprite.scss --css-sprite img/sprite.svg --css-render-scss-template ./src/svg/tpl/sprite.scss ./src/svg/*.svg",
+    "build:sprite": "svg-sprite -cD ./ --cscss --css-dest src/scss/ --css-render-scss-dest _sprite.scss --css-sprite sprites/sprite.svg --css-render-scss-template src/svg/tpl/sprite.scss ./src/svg/*.svg",
     "build:types": "tcm dist/ -c",
     "clean": "rimraf dist/*",
     "lint": "stylelint \"src/scss/**/*\" || echo \"Linting failed for some file(s)\"",
