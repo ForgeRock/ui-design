@@ -119,8 +119,7 @@ $custom-switch-width: ($custom-control-indicator-size * 2) * 1.75;
 $custom-switch-indicator-border-radius: $custom-control-indicator-size;
 $custom-control-indicator-checked-disabled-bg: rgba($primary, 0.5);
 $custom-switch-indicator-size: calc(
-  #{($custom-control-indicator-size * 2)} - #{$custom-control-indicator-border-width *
-    4}
+  #{($custom-control-indicator-size * 2)} - #{$custom-control-indicator-border-width * 4}
 ) !default;
 $fr-custom-control-indicator-switch-handle-color: $white;
 $fr-custom-control-indicator-switch-border-color: $gray-400;
@@ -322,7 +321,7 @@ $fr-sidebar-nav-link-hover-background-color: lighten($primary, 44%);
 $fr-sidebar-nav-link-active-color: $fr-sidebar-nav-link-hover-color;
 $fr-sidebar-nav-link-active-border-color: $primary;
 $fr-sidebar-nav-link-active-background-color: $fr-sidebar-nav-link-hover-background-color;
-$fr-sidebar-nav-shadow: 1px 0px 9px rgba(0, 0, 0, 0.13);
+$fr-sidebar-nav-shadow: 1px 0 9px rgba(0, 0, 0, 0.13);
 
 // Navbar Sidebar
 $fr-navbar-sidebar-fontsize: 0.875rem;
@@ -337,7 +336,7 @@ $fr-navbar-sidebar-dark-nav-link-hover-color: $white;
 $fr-navbar-sidebar-dark-nav-link-hover-bgcolor: rgba($gray-900, 0.5);
 $fr-navbar-sidebar-dark-nav-link-hover-border: 3px solid $blue;
 $fr-navbar-sidebar-dark-dropdown-bgcolor: rgba(#121212, 0.13);
-$fr-navbar-sidebar-dark-box-shadow: 1px 0px 9px rgba(0, 0, 0, 0.45);
+$fr-navbar-sidebar-dark-box-shadow: 1px 0 9px rgba(0, 0, 0, 0.45);
 
 // Sign up form
 $fr-signup-header-wrapper-height: 5.25rem;

@@ -19,6 +19,7 @@
 
 .navbar-backdrop {
   @extend .modal-backdrop;
+
   display: none;
   opacity: 0;
   z-index: $zindex-sticky;

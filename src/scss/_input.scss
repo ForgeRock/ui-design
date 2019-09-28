@@ -6,18 +6,21 @@
       border-color: $input-border-color;
       color: $input-btn-color;
     }
+
     > .btn:hover,
     > .btn:focus {
       color: $input-btn-active-color;
       background-color: $gray-100;
     }
   }
+
   .input-group-append {
     > .btn {
       border-bottom-left-radius: 0;
       border-top-left-radius: 0;
     }
   }
+
   .input-group-prepend {
     > .btn {
       border-bottom-right-radius: 0;
@@ -35,6 +38,7 @@
       .btn {
         border-color: transparent;
         background-color: transparent;
+
         &:hover,
         &:focus,
         &:active {
@@ -42,14 +46,17 @@
           color: $gray-900;
         }
       }
+
       .input-group-text {
         background-color: transparent;
         border: none;
       }
     }
+
     .input-group-append {
       right: 0;
     }
+
     .form-control {
       border-top-left-radius: $border-radius;
       border-bottom-left-radius: $border-radius;
@@ -64,8 +71,6 @@
 .form-group {
   flex: 1;
 }
-
-
 
 .form-label-group {
   position: relative;
@@ -91,12 +96,15 @@
       border-bottom-right-radius: 0;
     }
   }
+
   .input-group-prepend {
     flex-grow: 1;
+
     .input-group-text {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
     }
+
     button {
       border-bottom-right-radius: 0;
       border-top-right-radius: 0;
@@ -104,10 +112,12 @@
       border-color: $input-border-color;
       color: $input-btn-color;
     }
+
     button:hover {
       color: $input-btn-active-color;
       background-color: $gray-100;
     }
+
     &:first-child {
       .input-group-text:not(:first-child),
       .btn:not(:first-child):not(.dropdown-toggle) {
@@ -116,12 +126,15 @@
       }
     }
   }
+
   .input-group-append {
     flex-grow: 1;
+
     .input-group-text {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
     }
+
     button {
       border-bottom-left-radius: 0;
       border-top-left-radius: 0;
@@ -129,10 +142,12 @@
       border-color: $input-border-color;
       color: $input-btn-color;
     }
+
     button:hover {
       color: $input-btn-active-color;
       background-color: $gray-100;
     }
+
     &:last-child {
       .input-group-text:not(:last-child),
       .btn:not(:last-child):not(.dropdown-toggle) {
@@ -153,6 +168,7 @@
       .btn {
         border-color: transparent;
         background-color: transparent;
+
         &:hover,
         &:focus,
         &:active {
@@ -160,15 +176,18 @@
           color: $gray-900;
         }
       }
+
       .input-group-text {
         background-color: transparent;
         border: none;
       }
     }
+
     .input-group-append {
       right: 0;
     }
-    >.form-label-group-input:not(:last-child)  {
+
+    > .form-label-group-input:not(:last-child) {
       .form-control {
         border-top-right-radius: $border-radius;
         border-bottom-right-radius: $border-radius;
@@ -176,7 +195,6 @@
       }
     }
   }
-
 }
 
 //-->
@@ -209,6 +227,7 @@
   transition: all 0.1s ease-in-out;
   pointer-events: none;
 }
+
 .form-label-group textarea::placeholder,
 .form-label-group input::placeholder {
   color: transparent;
@@ -228,10 +247,12 @@
   font-size: 12px;
   color: $label-color;
 }
+
 .input-group-text {
   padding-left: $btn-padding-x;
   padding-right: $btn-padding-x;
 }
+
 .custom-select {
   -moz-appearance: none;
   -webkit-appearance: none;

@@ -22,6 +22,7 @@ body.sidebar-toggled-open .sidebar-content-margin .sidebar {
 
 body.sidebar-toggled-closed .sidebar-content-margin .sidebar {
   @include sidebar-toggle('closed');
+
   &:hover {
     @include sidebar-toggle('open');
   }
@@ -53,6 +54,7 @@ body.sidebar-toggled-closed .sidebar-content-margin .sidebar {
 
   body.sidebar-toggled-mobile .sidebar-content-margin .sidebar {
     @include sidebar-toggle('open');
+
     box-shadow: $fr-navbar-sidebar-dark-box-shadow;
     margin-left: 0;
   }

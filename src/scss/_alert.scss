@@ -17,22 +17,27 @@
       margin-top: ($spacer/4);
     }
   }
+
   .close {
     font-size: 1.5rem;
     padding: 0.75rem;
   }
+
   &.alert-primary {
     border-left: 5px solid $primary;
     background: $fr-alert-primary-bg-color;
   }
+
   &.alert-success {
     border-left: 5px solid $success;
     background: $fr-alert-success-bg-color;
   }
+
   &.alert-secondary {
     border-left: 5px solid $secondary;
     background: $fr-alert-secondary-bg-color;
   }
+
   &.alert-warning {
     border-left: 5px solid $warning;
     background: $fr-alert-warning-bg-color;
@@ -47,16 +52,19 @@
     border-left: 5px solid $info;
     background: $fr-alert-info-bg-color;
   }
+
   &.alert-light {
     border-left: 5px solid $light;
     background: $fr-alert-light-bg-color;
   }
+
   &.alert-dark {
     border-left: 5px solid lighten($dark, 10%);
     background: $fr-alert-dark-bg-color;
     color: $fr-alert-dark-text-color;
   }
 }
+
 .notifications .alert {
   margin-left: 1rem;
   -webkit-box-shadow: $fr-alert-box-shadow;

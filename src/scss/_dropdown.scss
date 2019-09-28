@@ -10,6 +10,7 @@
   > .media {
     padding: 1em 1em 1em 0.75rem;
   }
+
   .media-body {
     font-size: 0.875rem;
     white-space: nowrap;
@@ -22,6 +23,7 @@
 
     > .dropdown-item.dropdown-item-icontext {
       font-size: 0.875rem;
+
       > .material-icons {
         font-size: $fr-navbar-sidebar-icon-fontsize;
         line-height: 23px;
@@ -43,12 +45,14 @@
 
   &::after {
     @extend %dropdown-toggle-icon-more;
+
     margin: 0;
     position: absolute;
     right: 1.25rem;
     top: 50%;
     transform: translateY(-50%);
   }
+
   &[aria-expanded='true'] {
     &::after {
       @extend %dropdown-toggle-icon-less;

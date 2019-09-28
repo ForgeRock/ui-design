@@ -1,6 +1,6 @@
 @import 'node_modules/bootstrap/scss/nav';
 
-i.material-icons:before {
+i.material-icons::before {
   display: none;
 }
 
@@ -28,6 +28,7 @@ i.material-icons:before {
       position: relative;
       transition: background-color 0.2s ease, border-left-color 0.35s ease;
       white-space: nowrap;
+
       > .material-icons {
         font-size: $fr-navbar-sidebar-icon-fontsize;
         line-height: 1.244rem;
@@ -71,9 +72,11 @@ i.material-icons:before {
     > .nav-item {
       .nav-link {
         color: $fr-navbar-sidebar-dark-nav-link-color;
+
         &.active {
           border-left: $fr-navbar-sidebar-dark-nav-link-hover-border;
         }
+
         &.active,
         &:hover {
           background-color: $fr-navbar-sidebar-dark-nav-link-hover-bgcolor;

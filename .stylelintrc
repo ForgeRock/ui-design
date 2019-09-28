@@ -1,8 +1,12 @@
 {
-  "extends": "stylelint-config-standard",
+  "extends": ["stylelint-config-standard", "stylelint-prettier/recommended"],
+  "plugins": ["stylelint-prettier", "stylelint-scss"],
   "rules": {
+    "at-rule-no-unknown": null,
     "max-nesting-depth": 3,
-    "number-leading-zero": true
+    "number-leading-zero": "always",
+    "prettier/prettier": true,
+    "scss/at-rule-no-unknown": true
   }
 }
 
