@@ -1,14 +1,12 @@
 @import 'node_modules/bootstrap/scss/dropdown';
 
 .dropdown.dropdown-dark {
-  > .media .media-body {
-    color: $light;
-  }
-}
-
-.dropdown.dropdown-dark {
   > .media {
     padding: 1em 1em 1em 0.75rem;
+  }
+
+  > .media .media-body {
+    color: $light;
   }
 
   .media-body {

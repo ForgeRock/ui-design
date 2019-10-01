@@ -7,14 +7,14 @@
   ],
   "main": "./dist/",
   "scripts": {
-    "build": "npm-run-all clean build:sprite build:sass build:types",
+    "build": "npm-run-all -s lint -p clean build:sprite build:sass build:types",
     "build:dev": "npm-run-all --parallel watch:sass watch:sprite watch:types",
     "build:sass": "build/build.js",
     "build:sprite": "svg-sprite -cD ./ --cscss --css-dest src/scss/ --css-render-scss-dest _sprite.scss --css-sprite sprites/sprite.svg --css-render-scss-template src/svg/tpl/sprite.scss ./src/svg/*.svg",
     "build:types": "tcm dist/ -c",
     "clean": "rimraf dist/*",
-    "lint": "stylelint \"src/scss/**/*\" || echo \"Linting failed for some file(s)\"",
-    "lint:fix": "stylelint \"src/scss/**/*\" --fix || echo \"Linting failed for some file(s)\"",
+    "lint": "stylelint \"src/scss/**/*\"",
+    "lint:fix": "stylelint \"src/scss/**/*\" --fix",
     "watch:sass": "onchange -i 'src/scss/**/*.scss' -- npm-run-all build:sass",
     "watch:sprite": "onchange -i 'src/svg/**/*' -- npm-run-all build:sprite",
     "watch:types": "onchange 'dist/**/*.css' -- npm-run-all build:types"
