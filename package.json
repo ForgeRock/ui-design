@@ -3,21 +3,23 @@
   "version": "0.1.0",
   "description": "ForgeRock Styles and Styleguide",
   "files": [
+    "build",
+    "lib/",
     "src/"
   ],
-  "main": "./dist/",
+  "main": "./lib/forgerock.css",
   "scripts": {
     "build": "npm-run-all -s lint -p clean build:sprite build:sass build:types",
-    "build:dev": "npm-run-all --parallel watch:sass watch:sprite watch:types",
     "build:sass": "build/build.js",
     "build:sprite": "svg-sprite -cD ./ --cscss --css-dest src/scss/ --css-render-scss-dest _sprite.scss --css-sprite sprites/sprite.svg --css-render-scss-template src/svg/tpl/sprite.scss ./src/svg/*.svg",
-    "build:types": "tcm dist/ -c",
+    "build:types": "tcm lib/ -c",
     "clean": "rimraf dist/*",
     "lint": "stylelint \"src/scss/**/*\"",
     "lint:fix": "stylelint \"src/scss/**/*\" --fix",
+    "watch:all": "npm-run-all --parallel watch:sass watch:sprite watch:types",
     "watch:sass": "onchange -i 'src/scss/**/*.scss' -- npm-run-all build:sass",
     "watch:sprite": "onchange -i 'src/svg/**/*' -- npm-run-all build:sprite",
-    "watch:types": "onchange 'dist/**/*.css' -- npm-run-all build:types"
+    "watch:types": "onchange 'lib/**/*.css' -- npm-run-all build:types"
   },
   "repository": {
     "type": "git",
@@ -29,7 +31,7 @@
     "url": "https://github.com/ForgeRock/ui-design/issues"
   },
   "homepage": "https://github.com/ForgeRock/ui-design#readme",
-  "style": "dist/css/forgerock.css",
+  "style": "lib/forgerock.css",
   "devDependencies": {
     "bootstrap": "^4.3.1",
     "node-sass": "^4.12.0",
@@ -46,6 +48,7 @@
     "typed-css-modules": "^0.6.2"
   },
   "dependencies": {
+    "lib": "^4.0.5",
     "stylelint-config-standard": "^19.0.0"
   }
 }
