@@ -1,9 +1,0 @@
-// Links
-a {
-  color: $blue;
-  
-  &:hover,
-  &:focus {
-    color: darken($blue, 12%);
-  }
-}

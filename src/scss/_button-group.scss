@@ -1,0 +1,6 @@
+@import 'node_modules/bootstrap/scss/button-group';
+
+.btn-toolbar {
+  border-bottom: $fr-table-head-border solid $table-border-color;
+  padding: $spacer;
+}

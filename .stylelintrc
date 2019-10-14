@@ -1,0 +1,15 @@
+{
+  "extends": ["stylelint-config-standard", "stylelint-prettier/recommended"],
+  "ignoreFiles": "src/scss/_sprite.scss",
+  "plugins": ["stylelint-prettier", "stylelint-scss"],
+  "rules": {
+    "at-rule-no-unknown": null,
+    "max-nesting-depth": 4,
+    "no-descending-specificity": null,
+    "number-leading-zero": "always",
+    "prettier/prettier": true,
+    "scss/at-rule-no-unknown": true
+  }
+}
+
+# vi:syntax=json
