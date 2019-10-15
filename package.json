@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "description": "ForgeRock Styles and Styleguide",
   "files": [
-    "build",
     "lib/",
     "src/"
   ],
