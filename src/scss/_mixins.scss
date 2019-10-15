@@ -1,9 +1,7 @@
-@import 'node_modules/bootstrap/scss/mixins';
-
 @mixin material-icon($content) {
   border: none;
   content: $content;
-  font-family: 'Material Icons Outlined' Arial, Helvetica, sans-serif;
+  font-family: 'Material Icons Outlined', Arial, Helvetica, sans-serif;
 }
 
 @mixin headings {

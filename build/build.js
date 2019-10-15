@@ -8,13 +8,7 @@ const config = {
   scss: 'src/scss/',
 };
 
-const defaultImports = [
-  'functions',
-  'variables',
-  'mixins/mixins',
-  'rfs/rfs',
-  'utilities/utilities',
-];
+const defaultImports = ['variables', 'rfs/rfs', 'node_modules/bootstrap/scss/bootstrap'];
 
 const args = process.argv.slice(2, process.argv.length);
 const regex = /^_(.*).scss$/;
